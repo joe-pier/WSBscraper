@@ -27,7 +27,7 @@ d = {'time':[], 'author':[], 'title':[], 'body':[], 'id':[], 'comments':[]}
 
 
 for submission in new_sub:
-    d['time'],append(dt.datetime.now())
+    d['time'].append(dt.datetime.now())
     d['author'].append(submission.author)
     d['body'].append(submission.selftext)
     d['title'].append(submission.title)
