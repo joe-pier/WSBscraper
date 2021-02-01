@@ -23,10 +23,11 @@ subreddit = reddit.subreddit('wallstreetbets')
 new_sub = subreddit.new(limit = 100)
 
 
-d = {'author':[], 'title':[], 'body':[], 'id':[], 'comments':[]}
+d = {'time':[], 'author':[], 'title':[], 'body':[], 'id':[], 'comments':[]}
 
 
 for submission in new_sub:
+    d['time'],append(dt.datetime)
     d['author'].append(submission.author)
     d['body'].append(submission.selftext)
     d['title'].append(submission.title)
