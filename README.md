@@ -1,6 +1,3 @@
 # WSBscraper
 just a normal Reddit Scraper
-
-ciao
-ciao ciao
-ciao ciao ciao
+this is a normal Reddit you frick!
