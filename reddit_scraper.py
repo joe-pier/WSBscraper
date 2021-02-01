@@ -13,14 +13,14 @@ App Name: WSBscraper
 App ID: z2edaKf81OaY2w 
 '''
 
-reddit = praw.Reddit(client_id='z2edaKf81OaY2w',
-                     client_secret='ZgEG_HottISxIa27_UlXipTDY8j-vA',
+reddit = praw.Reddit(client_id='',
+                     client_secret='',
                      user_agent='WSBscraper',
-                     username='Logical_Delivery8331',
-                     password='070719981998aA%#[]')
+                     username='',
+                     password='')
 
 subreddit = reddit.subreddit('wallstreetbets')
-new_sub = subreddit.new(limit = 100)
+new_sub = subreddit.new(limit = 1000)
 
 
 d = {'time':[], 'author':[], 'title':[], 'body':[], 'id':[], 'comments':[]}
