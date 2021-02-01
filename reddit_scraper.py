@@ -8,14 +8,11 @@ link utili:
 https://datatofish.com/pandas-dataframe-to-sql/
 https://www.kite.com/python/answers/how-to-insert-the-contents-of-a-csv-file-into-an-sqlite3-database-in-python
 '''
-'''
-App Name: WSBscraper 
-App ID: z2edaKf81OaY2w 
-'''
+
 
 reddit = praw.Reddit(client_id='',
                      client_secret='',
-                     user_agent='WSBscraper',
+                     user_agent='',
                      username='',
                      password='')
 
