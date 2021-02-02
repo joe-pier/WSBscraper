@@ -114,9 +114,9 @@ class SReddit():
         Delta_time = [-temp + actual_time for temp in time_]
         d=0.2
         temp_list = [a/(1+d)**b for a,b in zip(upvotes,Delta_time)]
-        print(temp_list)
-        print(Delta_time)
-        print(upvotes)
+
+
+        return temp_list
 
 
 
