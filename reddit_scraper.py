@@ -92,7 +92,7 @@ class SReddit():
         return self.keywords_dict
 
 
-    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension = 50):
+    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension = 100):
         '''
         parole più utilizzate
         :return:
