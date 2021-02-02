@@ -1,17 +1,13 @@
-
 import time
 from collections import Counter
 from datetime import datetime
 from operator import itemgetter
-from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import praw
-import numpy as np
 from PIL import Image
-import requests
-import os
-from os import path
+from wordcloud import WordCloud
 
 '''
 link utili:
@@ -61,9 +57,9 @@ class SReddit():
             self.d['upvotes'].append(submission.score)
             self.d['body'].append(submission.selftext)
             self.d['title'].append(submission.title)
-            #self.d['id'].append(submission.id)
-            #self.d['comments'].append(submission.comments)
-            #self.d['author'].append(submission.author)
+            # self.d['id'].append(submission.id)
+            # self.d['comments'].append(submission.comments)
+            # self.d['author'].append(submission.author)
 
         if tocsv == True:
             to_csv(self.d, 'REDDIT')
@@ -92,8 +88,7 @@ class SReddit():
 
         return self.keywords_dict
 
-
-    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension = 100):
+    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100):
         '''
         parole più utilizzate
         :return:
@@ -110,14 +105,13 @@ class SReddit():
         excluded_words = ['The', 'the', 'a', 'my', 'all', 'with', 'is', 'this', 'The', 'A', 'All', 'To', 'to', 'just',
                           'and', 'you', 'are', 'at', 'on', 'in', 'if', 'it', 'when', 'while', 'I', 'what', 'have',
                           'got', 'but', 'up', 'for', 'more', 'we', 'can', 'THE', 'i'
-                           ,'of', 'me', 'only', '-', 'YOU', 'be', 'that']
+            , 'of', 'me', 'only', '-', 'YOU', 'be', 'that']
         for i in excluded_words: del self.count[i]
 
         sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
-        #lista contenente in ordine le parole più usate escluse le parole inutili
+        # lista contenente in ordine le parole più usate escluse le parole inutili
 
         X, Y = [*zip(*sorted_count)]
-
 
         if tocsv == True:
             to_csv(sorted_count, 'TOP USED WORDS', header=['WORD', 'OCCURRENCES'])
@@ -126,26 +120,22 @@ class SReddit():
             plt.bar(X, Y)
             plt.show()
         if WordCloud_ == True:
+            # questo commentato è per fare la maskera tramite un'immagine presa da internet
+            # mask_image = 'https://image.flaticon.com/icons/png/512/52/52191.png'
+            # mask = np.array(Image.open(
+            # requests.get(mask_image, stream=True).raw))
 
-            #questo commentato è per fare la maskera tramite un'immagine presa da internet
-            #mask_image = 'https://image.flaticon.com/icons/png/512/52/52191.png'
-            #mask = np.array(Image.open(
-            #requests.get(mask_image, stream=True).raw))
-
-
-            #questo è per creare una maschera tramite un'immagine in locale
+            # questo è per creare una maschera tramite un'immagine in locale
             mask = np.array(Image.open("img.png"))
 
-
-            wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0 ,contour_color='black', width=400, height=400)
+            wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0,
+                                  contour_color='black', width=400, height=400)
             wordcloud.generate(' '.join(X))
             plt.imshow(wordcloud, interpolation='bilinear')
             plt.axis("off")
             plt.show()
 
         return sorted_count
-
-
 
     def hottest_ones(self, tocsv=False):
         '''
@@ -194,8 +184,6 @@ Sreddit.scraper(tocsv=True)
 
 frequenze = Sreddit.frequency(tocsv=True)
 
-
 top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=1000)
 
 hot_ratio = Sreddit.hottest_ones(tocsv=True)
-
