@@ -149,7 +149,7 @@ def to_csv(d, name ):
 #prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 15, ['GME', 'BTC', 'COMEX', 'iShare'])
+Sreddit = SReddit('wallstreetbets', 15, ['GME', 'BTC', 'silver', '$GME'])
 Sreddit.scraper(tocsv=False)
 
 
