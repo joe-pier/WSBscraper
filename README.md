@@ -1,4 +1,4 @@
 # WSBscraper
-just a normal Reddit Scraper
+Just a normal Reddit Scraper
 
-this is a normal Reddit you frick!
+to use it fill in with your username and password at line 47-48
