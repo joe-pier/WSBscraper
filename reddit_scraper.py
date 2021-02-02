@@ -113,7 +113,6 @@ def to_csv(d, name ):
 
 Sreddit = SReddit('wallstreetbets', 5, ['GME', 'BTC', 'COMEX', 'iShare'])
 
-
 posts = Sreddit.scraper(tocsv=True)
 
 frequenze = Sreddit.frequency(tocsv=True)
