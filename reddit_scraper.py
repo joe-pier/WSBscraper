@@ -46,40 +46,48 @@ class SReddit():
 
         return self.d
 
-    def to_csv(self):
-        '''
-        per creare direttamente il file .csv
-        :return: dataframe pandas
-        '''
-        df = pd.DataFrame(self.d)
-        df.to_csv('REDDIT.csv', index=False)
-        return df
 
     def frequency(self):
         '''
-        per calcolare il numero di volte che una o più keyword viene nominata
-        :return:
+        per calcolare il numero di volte che una o più  keyword viene nominata
+        per trasformarlo in un .csv basta usare la funzione to_csv
+        :return: dictionary
         '''
         df = pd.DataFrame(self.d)
         titoli = df['title']
 
         keywords = self.keywords
 
-        temp=0
+        keywords_dict = dict.fromkeys(keywords, 0)
 
         for i in titoli:
             for j in i.split():
-                for k in keywords:
+                for k in keywords_dict.keys():
                     if j==k:
-                        temp+=1
+                        keywords_dict[k]+=1
 
-        return temp
+        return [keywords_dict]
+
+
+
+def to_csv(d, name = 'REDDIT'):
+    '''
+    input è un dizionario.
+    per creare direttamente il file .csv, di default MODIFICA il csv che contiene i post,
+    però può essere usato per creare il csv della funzione frequency
+    :return: dataframe pandas
+    '''
+    df = pd.DataFrame(d)
+    df.to_csv(name+'.csv', index_label= True, index=False)
+    return df
 
 
 
 #prova del codice
-Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC'])
+Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'COMEX'])
 
-Sreddit.scraper()
+posts = Sreddit.scraper()
+to_csv(posts)
 
-Sreddit.frequency()
+frequenze = Sreddit.frequency()
+to_csv(frequenze, 'FREQUENZE')
