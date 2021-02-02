@@ -3,6 +3,7 @@ import pandas as pd
 import datetime as dt
 from collections import Counter
 import operator
+from operator import itemgetter
 import time
 
 '''
@@ -93,33 +94,37 @@ class SReddit():
         conc_ = conc_items.split(' ')
         self.count = Counter(conc_)
 
-        sorted_count = sorted(self.count.items(), key=operator.itemgetter(1))
-        sorted_count= sorted_count[::-1]
-
+        sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
         if tocsv == True:
             to_csv(sorted_count, 'TOP USED WORDS')
         return sorted_count
 
 
-    def hottest_ones(self, d):
+    def hottest_ones(self, tocsv = False):
         '''
         attempt to catch the best reddit posts that are likely to become the top ones
 
         tanto maggiore è il numero di upvotes e tanto minore è il tempo dal quale è stato scritto tanto più alto sarà il suo "hot_ratio"
         :return:
         '''
+
+        title = self.d['title']
         upvotes = self.d['upvotes']
         time_ = self.d['time']
 
         actual_time = time.time()
 
         Delta_time = [-temp + actual_time for temp in time_]
+        hot_ratio = [a/b for a, b in zip(upvotes, Delta_time)]
 
+        lista = list(zip(title, hot_ratio))
 
-        temp_list = [a/b for a, b in zip(upvotes, Delta_time)]
+        sorted_lista = sorted(lista, key= itemgetter(1), reverse=True)
 
+        if tocsv ==True:
+            to_csv(sorted_lista, 'HOTTEST ONES')
 
-        return temp_list
+        return sorted_lista
 
 
 
@@ -144,14 +149,14 @@ def to_csv(d, name ):
 
 
 Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'COMEX', 'iShare'])
+Sreddit.scraper(tocsv=False)
 
-posts = Sreddit.scraper(tocsv=True)
+
 
 frequenze = Sreddit.frequency(tocsv=False)
 
-top_words = Sreddit.top__used_words(tocsv=True)
+
+top_words = Sreddit.top__used_words(tocsv=False)
 
 
-hot_ratio = Sreddit.hottest_ones(d=0.2)
-
-print(hot_ratio)
+hot_ratio = Sreddit.hottest_ones(tocsv=True)
