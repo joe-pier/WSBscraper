@@ -3,7 +3,7 @@ import pandas as pd
 import datetime as dt
 from collections import Counter
 import operator
-
+import time
 
 '''
 link utili:
@@ -40,11 +40,12 @@ class SReddit():
         new_sub = subreddit.new(limit = self.limit)
 
 
-        self.d = {'time':[], 'author':[], 'title':[], 'body':[], 'id':[], 'comments':[]}
+        self.d = {'time':[], 'upvotes':[], 'author':[], 'title':[], 'body':[], 'id':[], 'comments':[]}
 
 
         for submission in new_sub:
-            self.d['time'].append(dt.datetime.now())
+            self.d['time'].append(submission.created_utc)
+            self.d['upvotes'].append(submission.score)
             self.d['author'].append(submission.author)
             self.d['body'].append(submission.selftext)
             self.d['title'].append(submission.title)
@@ -77,7 +78,7 @@ class SReddit():
         if tocsv ==True:
             to_csv([self.keywords_dict], 'FREQUENZE')
 
-        return [self.keywords_dict]
+        return self.keywords_dict
 
 
     def top__used_words(self, tocsv = False):
@@ -100,6 +101,26 @@ class SReddit():
         return sorted_count
 
 
+    def hottest_ones(self):
+        '''
+        attempt to catch the best reddit posts that are likely to become the top ones
+        :return:
+        '''
+        upvotes = self.d['upvotes']
+        time_ = self.d['time']
+
+        actual_time = time.time()
+
+        Delta_time = [-temp + actual_time for temp in time_]
+        d=0.2
+        temp_list = [a/(1+d)**b for a,b in zip(upvotes,Delta_time)]
+        print(temp_list)
+        print(Delta_time)
+        print(upvotes)
+
+
+
+
 
 
 
@@ -119,10 +140,13 @@ def to_csv(d, name ):
 #prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC', 'COMEX', 'iShare'])
+Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'COMEX', 'iShare'])
 
-posts = Sreddit.scraper(tocsv=False)
+posts = Sreddit.scraper(tocsv=True)
 
-#frequenze = Sreddit.frequency(tocsv=True)
+frequenze = Sreddit.frequency(tocsv=False)
 
 top_words = Sreddit.top__used_words(tocsv=True)
+
+
+ratio = Sreddit.hottest_ones()
