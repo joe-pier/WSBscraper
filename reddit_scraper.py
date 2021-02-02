@@ -1,7 +1,7 @@
 import praw
 import pandas as pd
 import datetime as dt
-
+from collections import Counter
 
 '''
 link utili:
@@ -69,6 +69,18 @@ class SReddit():
         return [keywords_dict]
 
 
+    def top__used_words(self):
+
+        items = self.d['title']
+
+        conc_items = '\n'.join(items)
+        conc_ = conc_items.split(' ')
+        count = Counter(conc_)
+
+        return count
+
+
+
 
 
 
@@ -88,10 +100,14 @@ def to_csv(d, name = 'REDDIT'):
 #prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC', 'COMEX'])
+Sreddit = SReddit('wallstreetbets', 3, ['GME', 'BTC', 'COMEX', 'iShare'])
+
 
 posts = Sreddit.scraper()
 #to_csv(posts) questo è ovviamente inutile da fare
 
 frequenze = Sreddit.frequency()
 to_csv(frequenze, 'FREQUENZE')
+
+top_words = Sreddit.top__used_words()
+print(top_words)
