@@ -6,6 +6,11 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import pandas as pd
 import praw
+import numpy as np
+from PIL import Image
+import requests
+import os
+from os import path
 
 '''
 link utili:
@@ -48,16 +53,16 @@ class SReddit():
         subreddit = reddit.subreddit(self.subreddit)
         new_sub = subreddit.new(limit=self.limit)
 
-        self.d = {'time': [], 'upvotes': [], 'author': [], 'title': [], 'body': [], 'id': [], 'comments': []}
+        self.d = {'time': [], 'upvotes': [], 'title': [], 'body': []}
 
         for submission in new_sub:
             self.d['time'].append(submission.created_utc)
             self.d['upvotes'].append(submission.score)
-            self.d['author'].append(submission.author)
             self.d['body'].append(submission.selftext)
             self.d['title'].append(submission.title)
-            self.d['id'].append(submission.id)
-            self.d['comments'].append(submission.comments)
+            #self.d['id'].append(submission.id)
+            #self.d['comments'].append(submission.comments)
+            #self.d['author'].append(submission.author)
 
         if tocsv == True:
             to_csv(self.d, 'REDDIT')
@@ -86,7 +91,8 @@ class SReddit():
 
         return self.keywords_dict
 
-    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension = 100):
+
+    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension = 50):
         '''
         parole più utilizzate
         :return:
@@ -118,10 +124,20 @@ class SReddit():
         if plot_ == True:
             plt.bar(X, Y)
             plt.show()
-
         if WordCloud_ == True:
-            X = list(X)
-            wordcloud = WordCloud(background_color="white", max_words=CloudDimension).generate(' '.join(X))
+
+            #questo commentato è per fare la maskera tramite un'immagine presa da internet
+            #mask_image = 'https://image.flaticon.com/icons/png/512/52/52191.png'
+            #mask = np.array(Image.open(
+            #requests.get(mask_image, stream=True).raw))
+
+
+            #questo è per creare una maschera tramite un'immagine in locale
+            mask = np.array(Image.open("immagine.jpg"))
+
+
+            wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0 ,contour_color='black', width=400, height=400)
+            wordcloud.generate(' '.join(X))
             plt.imshow(wordcloud, interpolation='bilinear')
             plt.axis("off")
             plt.show()
@@ -171,13 +187,14 @@ def to_csv(d, name, header=None, index=False):
 # prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC', 'silver', '$GME'])
+Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'silver', '$GME'])
 
-Sreddit.scraper(tocsv=False)
+Sreddit.scraper(tocsv=True)
 
-# frequenze = Sreddit.frequency(tocsv=True)
+frequenze = Sreddit.frequency(tocsv=True)
 
 
-top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True)
+top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=10)
 
-# hot_ratio = Sreddit.hottest_ones(tocsv=True)
+hot_ratio = Sreddit.hottest_ones(tocsv=True)
+
