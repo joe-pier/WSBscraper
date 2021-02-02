@@ -12,6 +12,9 @@ https://datatofish.com/pandas-dataframe-to-sql/
 https://www.kite.com/python/answers/how-to-insert-the-contents-of-a-csv-file-into-an-sqlite3-database-in-python
 '''
 class SReddit():
+    '''
+    classe SReddit
+    '''
     def __init__(self, subreddit, limit, keywords, d=None, keywords_dict=None, count=None):
         if count is None:
             count = {}
@@ -25,6 +28,7 @@ class SReddit():
         self.d = d
         self.keywords_dict= keywords_dict
         self.count = count
+
 
     def scraper(self, tocsv=False):
         '''
@@ -59,6 +63,7 @@ class SReddit():
         return self.d
 
 
+
     def frequency(self, tocsv =False):
         '''
         per calcolare il numero di volte che una o più  keyword viene nominata
@@ -78,7 +83,7 @@ class SReddit():
                     if j==k:
                         self.keywords_dict[k]+=1
         if tocsv ==True:
-            to_csv([self.keywords_dict], 'FREQUENZE')
+            to_csv([self.keywords_dict], 'FREQUENZE', header= self.keywords)
 
         return self.keywords_dict
 
@@ -130,18 +135,14 @@ class SReddit():
 
 
 
-
-
-
-
-def to_csv(d, name, header=None ):
+def to_csv(d, name, header=None, index = False):
     '''
     input è un dizionario.
     per creare direttamente il file .csv
     :return: dataframe pandas
     '''
     df = pd.DataFrame(d)
-    df.to_csv(name+'.csv', header=header)
+    df.to_csv(name+'.csv', header=header, index=index)
     return df
 
 
@@ -151,14 +152,14 @@ def to_csv(d, name, header=None ):
 
 
 Sreddit = SReddit('wallstreetbets', 15, ['GME', 'BTC', 'silver', '$GME'])
-Sreddit.scraper(tocsv=False)
+
+Sreddit.scraper(tocsv=True)
 
 
-
-frequenze = Sreddit.frequency(tocsv=False)
+frequenze = Sreddit.frequency(tocsv=True)
 
 
 top_words = Sreddit.top__used_words(tocsv=True)
 
 
-hot_ratio = Sreddit.hottest_ones(tocsv=False)
+hot_ratio = Sreddit.hottest_ones(tocsv=True)
