@@ -1,34 +1,37 @@
-import praw
-import pandas as pd
-from datetime import datetime
-from collections import Counter
-import operator
-from operator import itemgetter
 import time
+from collections import Counter
+from datetime import datetime
+from operator import itemgetter
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+import pandas as pd
+import praw
 
 '''
 link utili:
 https://datatofish.com/pandas-dataframe-to-sql/
 https://www.kite.com/python/answers/how-to-insert-the-contents-of-a-csv-file-into-an-sqlite3-database-in-python
 '''
+
+
 class SReddit():
     '''
     classe SReddit
     '''
+
     def __init__(self, subreddit, limit, keywords, d=None, keywords_dict=None, count=None):
         if count is None:
             count = {}
         if keywords_dict is None:
-            keywords_dict={}
+            keywords_dict = {}
         if d is None:
             d = {}
         self.subreddit = subreddit
         self.limit = limit
         self.keywords = keywords
         self.d = d
-        self.keywords_dict= keywords_dict
+        self.keywords_dict = keywords_dict
         self.count = count
-
 
     def scraper(self, tocsv=False):
         '''
@@ -41,13 +44,11 @@ class SReddit():
                              user_agent='WSBscraper',
                              username='',
                              password='')
-        #NB. il codice funziona se viene messa la propria password e nome utente in username e password.
+        # NB. il codice funziona se viene messa la propria password e nome utente in username e password.
         subreddit = reddit.subreddit(self.subreddit)
-        new_sub = subreddit.new(limit = self.limit)
+        new_sub = subreddit.new(limit=self.limit)
 
-
-        self.d = {'time':[], 'upvotes':[], 'author':[], 'title':[], 'body':[], 'id':[], 'comments':[]}
-
+        self.d = {'time': [], 'upvotes': [], 'author': [], 'title': [], 'body': [], 'id': [], 'comments': []}
 
         for submission in new_sub:
             self.d['time'].append(submission.created_utc)
@@ -58,13 +59,11 @@ class SReddit():
             self.d['id'].append(submission.id)
             self.d['comments'].append(submission.comments)
 
-        if tocsv==True:
+        if tocsv == True:
             to_csv(self.d, 'REDDIT')
         return self.d
 
-
-
-    def frequency(self, tocsv =False):
+    def frequency(self, tocsv=False):
         '''
         per calcolare il numero di volte che una o più  keyword viene nominata
         per trasformarlo in un .csv basta usare la funzione to_csv
@@ -80,15 +79,14 @@ class SReddit():
         for i in titoli:
             for j in i.split():
                 for k in self.keywords_dict.keys():
-                    if j==k:
-                        self.keywords_dict[k]+=1
-        if tocsv ==True:
-            to_csv([self.keywords_dict], 'FREQUENZE', header= self.keywords)
+                    if j == k:
+                        self.keywords_dict[k] += 1
+        if tocsv == True:
+            to_csv([self.keywords_dict], 'FREQUENZE', header=self.keywords)
 
         return self.keywords_dict
 
-
-    def top__used_words(self, tocsv = False):
+    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension = 100):
         '''
         parole più utilizzate
         :return:
@@ -99,22 +97,40 @@ class SReddit():
         conc_items = '\n'.join(items)
         conc_ = conc_items.split(' ')
 
-        #è un dizionario
+        # è un dizionario
         self.count = Counter(conc_)
 
-
-        excluded_words = ['the', 'a', 'my', 'all', 'with','is', 'this', 'The', 'A', 'All', 'To', 'to','just', 'and', 'you', 'are', 'at', 'on', 'in', 'if', 'it','when','while','I', 'what']
+        excluded_words = ['The', 'the', 'a', 'my', 'all', 'with', 'is', 'this', 'The', 'A', 'All', 'To', 'to', 'just',
+                          'and', 'you', 'are', 'at', 'on', 'in', 'if', 'it', 'when', 'while', 'I', 'what', 'have',
+                          'got', 'but', 'up', 'for', 'more', 'we', 'can', 'THE', 'i'
+                           ,'of', 'me', 'only', '-', 'YOU', 'be', 'that']
         for i in excluded_words: del self.count[i]
 
         sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
-        if tocsv == True:
-            to_csv(sorted_count, 'TOP USED WORDS', header= ['WORD','OCCURRENCES'])
+        #lista contenente in ordine le parole più usate escluse le parole inutili
 
+        X, Y = [*zip(*sorted_count)]
+
+
+        if tocsv == True:
+            to_csv(sorted_count, 'TOP USED WORDS', header=['WORD', 'OCCURRENCES'])
+
+        if plot_ == True:
+            plt.bar(X, Y)
+            plt.show()
+
+        if WordCloud_ == True:
+            X = list(X)
+            wordcloud = WordCloud(background_color="white", max_words=CloudDimension).generate(' '.join(X))
+            plt.imshow(wordcloud, interpolation='bilinear')
+            plt.axis("off")
+            plt.show()
 
         return sorted_count
 
 
-    def hottest_ones(self, tocsv = False):
+
+    def hottest_ones(self, tocsv=False):
         '''
         attempt to catch the best reddit posts that are likely to become the top ones
 
@@ -129,44 +145,39 @@ class SReddit():
         actual_time = time.time()
 
         Delta_time = [-temp + actual_time for temp in time_]
-        hot_ratio = [a/b for a, b in zip(upvotes, Delta_time)]
+        hot_ratio = [a / b for a, b in zip(upvotes, Delta_time)]
 
         lista = list(zip(DateTime, title, hot_ratio))
 
-        sorted_lista = sorted(lista, key= itemgetter(2), reverse=True)
+        sorted_lista = sorted(lista, key=itemgetter(2), reverse=True)
 
-        if tocsv ==True:
+        if tocsv == True:
             to_csv(sorted_lista, 'HOTTEST ONES', header=['time', 'post', 'hot ratio'])
 
         return sorted_lista
 
 
-
-def to_csv(d, name, header=None, index = False):
+def to_csv(d, name, header=None, index=False):
     '''
     input è un dizionario.
     per creare direttamente il file .csv
     :return: dataframe pandas
     '''
     df = pd.DataFrame(d)
-    df.to_csv(name+'.csv', header=header, index=index)
+    df.to_csv(name + '.csv', header=header, index=index)
     return df
 
 
+# prova del codice#
 
 
-#prova del codice#
+Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC', 'silver', '$GME'])
+
+Sreddit.scraper(tocsv=False)
+
+# frequenze = Sreddit.frequency(tocsv=True)
 
 
-Sreddit = SReddit('wallstreetbets', 15, ['GME', 'BTC', 'silver', '$GME'])
+top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True)
 
-Sreddit.scraper(tocsv=True)
-
-
-frequenze = Sreddit.frequency(tocsv=True)
-
-
-top_words = Sreddit.top__used_words(tocsv=True)
-
-
-hot_ratio = Sreddit.hottest_ones(tocsv=True)
+# hot_ratio = Sreddit.hottest_ones(tocsv=True)
