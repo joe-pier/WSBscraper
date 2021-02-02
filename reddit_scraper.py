@@ -24,6 +24,7 @@ class SReddit():
         self.keywords = keywords
         self.d = d
         self.keywords_dict= keywords_dict
+        self.count = count
 
     def scraper(self, tocsv=False):
         '''
@@ -97,7 +98,7 @@ class SReddit():
 
         sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
         if tocsv == True:
-            to_csv(sorted_count, 'TOP USED WORDS')
+            to_csv(sorted_count, 'TOP USED WORDS', header= ['word','occurencies'])
         return sorted_count
 
 
@@ -123,7 +124,7 @@ class SReddit():
         sorted_lista = sorted(lista, key= itemgetter(2), reverse=True)
 
         if tocsv ==True:
-            to_csv(sorted_lista, 'HOTTEST ONES')
+            to_csv(sorted_lista, 'HOTTEST ONES', header=['time', 'post', 'hot ratio'])
 
         return sorted_lista
 
@@ -133,14 +134,14 @@ class SReddit():
 
 
 
-def to_csv(d, name ):
+def to_csv(d, name, header=None ):
     '''
     input è un dizionario.
     per creare direttamente il file .csv
     :return: dataframe pandas
     '''
     df = pd.DataFrame(d)
-    df.to_csv(name+'.csv')
+    df.to_csv(name+'.csv', header=header)
     return df
 
 
@@ -157,7 +158,7 @@ Sreddit.scraper(tocsv=False)
 frequenze = Sreddit.frequency(tocsv=False)
 
 
-top_words = Sreddit.top__used_words(tocsv=False)
+top_words = Sreddit.top__used_words(tocsv=True)
 
 
-hot_ratio = Sreddit.hottest_ones(tocsv=True)
+hot_ratio = Sreddit.hottest_ones(tocsv=False)
