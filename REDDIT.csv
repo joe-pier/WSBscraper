@@ -1,5 +1,7 @@
 ,time,author,title,body,id,comments
-0,2021-02-02 12:42:13.114593,OneTIME_story,Is there a reason NOT to count the total amount of shares WSB is holding for GME? Just out of curiosity to be honest.,"Hear me out - I'm a known retard amongst my friends so it wouldn't be the first time I'm sent back to the kiddie table while the adults in the other room are having intercourse with my mom and wife. However, I AM a nosy whippersnapper.
+0,2021-02-02 12:44:23.903518,LordApocalyps,Time to join forces,,latqqu,<praw.models.comment_forest.CommentForest object at 0x0CF26718>
+1,2021-02-02 12:44:24.086379,holysharky,We’re not stopping anytime soon. 💎🙌 to the Moon.,,latq55,<praw.models.comment_forest.CommentForest object at 0x0CF26748>
+2,2021-02-02 12:44:24.293845,OneTIME_story,Is there a reason NOT to count the total amount of shares WSB is holding for GME? Just out of curiosity to be honest.,"Hear me out - I'm a known retard amongst my friends so it wouldn't be the first time I'm sent back to the kiddie table while the adults in the other room are having intercourse with my mom and wife. However, I AM a nosy whippersnapper.
 
 If we all post it at the same format excluding cost basis then someone smarter can come and extra that this number.
 
@@ -9,8 +11,8 @@ I propose the format as following:
 
 2. Your meme numbers of ""69"", ""420"" come after
 
-3. Finally you post your shares (exclude the quotes) "">860"". I only know xls data separation b a specific mark so that's why I propose the "">"" sign, but as stated firstly - im a known retard",latoyj,<praw.models.comment_forest.CommentForest object at 0x0D046718>
-1,2021-02-02 12:42:13.305568,Bellweirboy,Financial Times deleting comments. Very unusual. Someone BIG must be leaning on them.,"So I wandered to the FT out of interest today. Top of the ‘Most Read’ is this
+3. Finally you post your shares (exclude the quotes) "">860"". I only know xls data separation b a specific mark so that's why I propose the "">"" sign, but as stated firstly - im a known retard",latoyj,<praw.models.comment_forest.CommentForest object at 0x0CF26B08>
+3,2021-02-02 12:44:24.568609,Bellweirboy,Financial Times deleting comments. Very unusual. Someone BIG must be leaning on them.,"So I wandered to the FT out of interest today. Top of the ‘Most Read’ is this
 
 Silver price hits 8-year high as retail traders take aim
 
@@ -28,9 +30,9 @@ My post was removed. No feedback, no trace. So I submitted a comment saying this
 
 &#x200B;
 
-*Processing img snu21pxjw1f61...*",latovc,<praw.models.comment_forest.CommentForest object at 0x0D046748>
-2,2021-02-02 12:42:13.516737,GukkiSpace,just filled up on hopium,,latm4w,<praw.models.comment_forest.CommentForest object at 0x0D0469E8>
-3,2021-02-02 12:42:13.727691,YOLOQuant,TradeZero CEO is a Lying Piece of Shit: DO NOT TAKE YOUR MONEY THERE,"TradeZero CEO recently claimed he refused to block trading after staying on the phone with the clearing firm for 3 hours. After reading this, I sent my broker an email telling them to grow a pair and fight the clearing firms next time.
+*Processing img snu21pxjw1f61...*",latovc,<praw.models.comment_forest.CommentForest object at 0x0CF26C28>
+4,2021-02-02 12:44:24.763867,GukkiSpace,just filled up on hopium,,latm4w,<praw.models.comment_forest.CommentForest object at 0x0CF26E20>
+5,2021-02-02 12:44:24.993592,YOLOQuant,TradeZero CEO is a Lying Piece of Shit: DO NOT TAKE YOUR MONEY THERE,"TradeZero CEO recently claimed he refused to block trading after staying on the phone with the clearing firm for 3 hours. After reading this, I sent my broker an email telling them to grow a pair and fight the clearing firms next time.
 
 My broker responded that the clearing firms shut down trading for **3.5 hours**: *the same duration as what TradeZero claims to have remained on the phone*. So trade zero shut down trading for the exact same amount of time as all the other brokers, and is just acting like Dan Pipitone stayed on the phone with them for 3 hours fighting this shit.
 
@@ -40,14 +42,14 @@ My broker responded that the clearing firms shut down trading for **3.5 hours**:
 
 **Original Letter from the dickhead TradeZero CEO:**
 
-*Processing img tfxw9p4du1f61...*
+https://preview.redd.it/tfxw9p4du1f61.png?width=1498&format=png&auto=webp&s=d4d571548db898d6257ea55b0b2074e21a0e9bab
 
 **Response from my Broker after Asking Them to Grow a Pair**
 
 Thanks for reaching out, happy to help clarify. ​​​​​​Our clearing firm's decision to shut down trading for 3.5 hours on those stocks was for a capital call and had nothing to do with market manipulation. They do NOT trade for themselves or against customers. It is highly unlikely that our clearing firm will need to take similar actions on these stocks in the near-term future. This is a regulatory issue that is causing most of the clearing firms to not be able to meet the regulatory capital requirements. It has nothing to do with the brokerages or the liquidity providers. If the clearing firms cannot meet the regulatory capital requirements to accommodate for the risk associated with these symbols, they are forced to take action to reduce the risk and get back into compliance with the capital requirements. This was not a decision made by tastyworks. You can voice your displeasure to the regulators and the capital requirements that they put in place and enforce.
 
-If there is anything else we can assist you with, please do not hesitate to contact us again!",latln4,<praw.models.comment_forest.CommentForest object at 0x0D046BE0>
-4,2021-02-02 12:42:13.947036,Ollerus-Gaming,Referencing the VW Short Squeeze in the GME timeline.,"Obviously the past couple of days have been slightly rocky and not pretty to look at. But a similar trend was followed right before the VW 'mother of all' short squeeze's in 2008 (link below, scroll down to the charts).
+If there is anything else we can assist you with, please do not hesitate to contact us again!",latln4,<praw.models.comment_forest.CommentForest object at 0x0CF26D60>
+6,2021-02-02 12:44:25.246483,Ollerus-Gaming,Referencing the VW Short Squeeze in the GME timeline.,"Obviously the past couple of days have been slightly rocky and not pretty to look at. But a similar trend was followed right before the VW 'mother of all' short squeeze's in 2008 (link below, scroll down to the charts).
 
 This happened right before the VW spike and is where I believe us to be right now. 
 
@@ -76,10 +78,10 @@ If you're holding, do your own DD and understand why. This helped me see where t
 
 **Shorts have to cover eventually and there won't be enough shares to go around.**
 
-I'm not a financial advisor.",latlhz,<praw.models.comment_forest.CommentForest object at 0x0D046C28>
-5,2021-02-02 12:42:14.189043,Gobears510,I am bleeding but I will remain resolute. 💎✋🏼,,latl3u,<praw.models.comment_forest.CommentForest object at 0x0D046D60>
-6,2021-02-02 12:42:14.407580,ImmaPilotMeow,"IF HE’S HOLDING, I’M HOLDING",,latl36,<praw.models.comment_forest.CommentForest object at 0x0D046C70>
-7,2021-02-02 12:42:14.604838,YggdrasilBurnes,"I have some pretty grave concerns about the SEC's announcement of surplus stocks, alongside the 120% float.","Obligatory 🦍💎👐GME🚀🌕. 
+I'm not a financial advisor.",latlhz,<praw.models.comment_forest.CommentForest object at 0x0CFA4028>
+7,2021-02-02 12:44:25.578394,Gobears510,I am bleeding but I will remain resolute. 💎✋🏼,,latl3u,<praw.models.comment_forest.CommentForest object at 0x0CFA42F8>
+8,2021-02-02 12:44:25.845038,ImmaPilotMeow,"IF HE’S HOLDING, I’M HOLDING",,latl36,<praw.models.comment_forest.CommentForest object at 0x0CFA4520>
+9,2021-02-02 12:44:26.047117,YggdrasilBurnes,"I have some pretty grave concerns about the SEC's announcement of surplus stocks, alongside the 120% float.","Obligatory 🦍💎👐GME🚀🌕. 
 
 Okay. Real talk. 
 
@@ -124,53 +126,4 @@ My position:
 
 I'm currently 3.96 on GME, through Robinhood. I bought around $299ish and I have not initiated any transfer or placed any limits since. Have not sold to buy back dips, I figured that would do severe damage to the float percent we're trying to keep in Infinite squeezing range. I have no options. A 10.17 deficit was placed on my account at the time this went onto the news, which further convinced me to remain holding these shares on the account. Most every other broker is Cash Accts on sign up and this would potentially classify as a violation, though being Margin, even this is up for debate. That said, 20 dollars is transferring now to pay it off, so it might not even be relevant.
 
-Not financial advice, influence, or recommendations of any kind. I am not a financial advisor, nor a financial expert of any kind. I just like the stock. I think. Maybe.",latknl,<praw.models.comment_forest.CommentForest object at 0x0D0C3160>
-8,2021-02-02 12:42:14.845019,landmanpgh,Defining Moment,"Backs against the wall. Deck stacked against us.
-
-
-Read through the comments and posts and you'll notice a sometimes quiet, but alarming tone. People think the other side is winning. The media is saying it's over. Once again, our own community is even laughing at us.
-
-
-And that's what has been happening since day 1. Since the first time someone ever said they were going long on the stock of a ""failing business"", people have been making jokes.
-
-
-But this is your chance to stand your ground and start pushing back. Look at that price. That shit is **DIRT. FUCKING. CHEAP.** So sure, you can sell right now for a small win and later tell the story about the time you almost hit it big.
-
-
-Or you can double down.
-
-
-Look at the volume over the past few days. We're not selling, but we're also not buying. And holding only works if everyone continues to do it.
-
-
-I'm not telling you what to do. I'll just say this: it sure would be beautiful if we sent a fucking message at open this morning.
-
-
-Positions: https://www.reddit.com/r/wallstreetbets/comments/laf42w/gme_down_164058_today_still_holding/",latk96,<praw.models.comment_forest.CommentForest object at 0x0D0C38B0>
-9,2021-02-02 12:42:15.180412,SimplyPwned,To all GME holders: Shut up and listen," This text was originally posted in r/[Mauerstrassenwetten](https://www.reddit.com/r/mauerstrassenwetten/comments/laaq9y/an_alle_zuh%C3%B6ren_und_schnauze_halten/) by u/knutolee. I thought his message was so powerful that I asked him for permission to translate, post (can share chat with Mod if required or check directly with him) and fuck his wife (ok didn’t ask for permission) after and he agreed to ~~all~~ most of this wholeheartedly – like a true Autist. I am trying to catch the message – so don’t expect a word by word translation as you can never catch the greatness of the text in it’s entirety and I got to translate it in a way that even a US degenerate can follow it.
-
-As usual no financial advice, I more or less just copied the text because I liked the text and I like the share. In general I have likely lost more than I won and the stock market is a mystery in itself to me. So make your own due dilligence and don’t trust financial advice of others (the argument for that you can read to a certain extent below).  
-
-**Autists, Degenerates, Idiocracy of the World – let me get this straight!**
-
-In the coming days I don’t wanna see all this whining and bitching on this sub and espescially in the daily GME threads anymore. On every fucking corner of this sub I smell doubt, you read messages the likes of „this is over“, „we missed the squeeze“, „I am going to loose it all“, „entered at 320$ - I am doomed“. What the fuck is wrong with you retards, did you fucking wanker your wifes boyfriend dick all night and lost your mind over the effort to do so? I think I got to get this accross the Buddy Stephens way to get you down to fucking earth and get your attitude right. 
-
-**1) You come to a sub called** r/wallstreetbets **and yolo your hard earned money in $GME**
-
-You realize what you are doing here - you true fuck - dont you? This is a community of full blown first class true tits up degenerates which take pleasure in posting losses accumulating into the millions every fucking month and you are putting your money into a BET – yes my dear it is written out in the name of this very fucking sub Wallstreet-B-E-T-S!!! – and follow DD posted by people with names like „SHOW\_ME\_YOUR\_ANAL\_TITS“? You realize this is not a fucking Disney ferry „One-Wish-comes-true“ show and we see all day long gain porn and loss porn is something which doesn’t exist in this world? This is a band of true autists which occupied an absolute niche when it comes down to trading (and we even don’t trade stocks normally!). This is the place where one wants to enjoy the sado-masochistic part of the retarded capitalistic system we are living in. Yes we have some (maybe a lot) DD diamonds in this sub which by the way are now impossible to find because you degenerate fucks spam the entire system to the moon but no sane long-term investor would consider to invest into any of these investments – this is about „get rich or die trying!“. This is not r/investing!
-
-**2) Yeah but I saw Reddit in the news and all that stuff about GME and it was going through the roof becasue there is going to be short squeeze and on top of it the hedge funds fucked up, hihihi**
-
-If this entire thing was a safe bet why exactly would not the fucking entire world jump on this train? (and even you might get this image from all this „Saudi Arabia calling, China calling, Africa calling posts – but please they invest into BABA, Aramco or I don’t know what’s the hot shit in Lagos stock exchange right now – could be though the next big thing – got to see if I can find a DD on this). So why is this not happening? Because it is a fucking BET – the stock market is a fucking Casino and the major difference between r/investing and us is that they are always just bet on black or red, while we always go for the magical zero. It is totally unclear whether all of us going to show up at Miami Beach with our Porsche Cayenne or Tesla Model S and hit on the girls (or boys) on the beach! The reasons are layed out to you every fucking day with yet another quality DD that most of us simply dont understand! And yes our chances to already sit on the fucking moon slurping our Pinha Coladas would be certainly higher if everything was going the way we believe the system should be working but even the last person who joined this sub by now should realize – you are potentially fucking with the system itself (by the way something this sub never intentionally wanted and you shouldn’t do if you like the system).
-
-**3) Hey but when is the squeeze of the squoze going to happen? 😓**
-
-So there is this story going through the media and from Florida to Colorado everybody remotely degenerate is yoloing money into GME. It’s a fucking global movement now (or not – could be also the same 50.000 degenerates cheering up themselves the entire time which would much better fit this place) and according to the DD we just need to have 🙌💎and the shorts a bleeding their panties, their balls feel squozen (and not in a good way) and they are completely in defensive mode. What do you think what people who are responsible for Multi-billion $$$ HF are going to do? How do you think you become a person who is responsible for such an operation? Do you think these guys have served as altar boys or girls in church (no offense if so)? What is wrong with you? Seriously! Do you think if they get some headwind they are going to say: Oh boy – we got defeated and going to realize a multi-fucking-billion-to-the-moon loss? **OF COURSE FUCKING NOT!** **THEY WILL GET EVERY FUCKING BAZOOKA, TANK, ROCKET or INTER-STELLAR DEFENSE SYSTEM IN PLACE TO BRING THIS TO AN END!** Influence the market participants (speculation), Short-Laddar attacks (I to this very day haven’t understand the concept or how this works – speculation), demotivational tactics (speculation) and to whomever picks it up – desinformation (well not quite speculation but it could also be that media is just retarded as fuck to get the most simple facts straight). So what would you do with a potential group of 5mn small-size investors – shall we do a collective effort to think about it? Ah fuck it! It is to fucking obvious – you would dry this out through time, divide their interests and drive away their attention. Because let’s be fucking honest – most of you entered this thinking you would hold this wonderful stock for a couple of days (and to be honest in this respect the community how it existed 10 days ago was much more true to itself - no whining just sayin)! Gotcha! Who can tell me who fucked each other two weeks ago in People magazin or on Twitter? Nobody – I even don’t remember shit about this very forum before GME (ok I remember u/variation-separate but that is another story). And all their tactics are completely understandable because there is a fucking huge amount of tendies to be made and they are not that different from us (my fear). 
-
-**4) That does not give you the fucking right to whine and bitch all the time in the daily threads (and it is not happening already its going to be) and fucking ruin the party**
-
-Deal with it – we just got to wait how this thing plays out. That’s it. If we are right – this will play out positively in one or another way (huge tendies or SEC investigating). Let them continue shorting the stock or whatever. If you believe you want to buy more stock – do your DD and do it. When this got picked up a long time ago by people they thought – hmmmm makes sense – I am going to get me one of these tickets to the moon. There was if at all a very little interest to squoze the balls of any HF and it was certainly not the main motivation of this sub. I said it above: Get rich or die tryin! Since last Thursday the whole thing became political and it looks like rules were changed in our disfavour and yeah we can not go back in time but we got to deal with it and the circumstances. \[Left out this part as it promotes holding and buying which I don’t want to in the sense that everybody needs to make his own fucking decision but I am going to fucking hold\] but **WE NEED TO REGAIN OUR POSITIVE SPIRIT** which was an essential part of this sub and GME for most part in January (and of course in general before) – no matter how fucked up things looked (individually as there is not such a thing as collective alignment to buy options or stocks on this forum). We will see how the numbers are play out and who provided the adequate picture. In our reality GME is going to the moon and the 🚀 is fueled. Period. We are just prevented from starting because of the windy conditions out there. 
-
-So please – no post without 🙌💎🙌💎🙌💎🚀🚀🚀 and if you want to fukn leave the party – leave – but let us continue this party, because we are going to the fkn moon. This is the way and I fkn love GME and if this means I need to hold onto this beauty for another 25 years I am going to do it.
-
-P.S.: One thing personal in the past there were huge donations made to people suffering from autism. As we owe this community so much and lend their names every fkn day I would really like to see some of your degenerates not forget about this cause because we owe them more and as much as I like the billboards I’d rather see every $$$ go into such things then telling the world about it – I think everybody out there know by now that we exist and that we have 🙌💎",lathys,<praw.models.comment_forest.CommentForest object at 0x0D0DB3D0>
+Not financial advice, influence, or recommendations of any kind. I am not a financial advisor, nor a financial expert of any kind. I just like the stock. I think. Maybe.",latknl,<praw.models.comment_forest.CommentForest object at 0x0CFA44F0>

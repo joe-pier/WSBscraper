@@ -96,7 +96,7 @@ class SReddit():
         sorted_count= sorted_count[::-1]
         print(sorted_count)
         if tocsv == True:
-            to_csv([self.count], 'TOP USED WORDS')
+            to_csv(sorted_count, 'TOP USED WORDS')
 
 
 
