@@ -105,11 +105,13 @@ class SReddit():
         excluded_words = ['The', 'the', 'a', 'my', 'all', 'with', 'is', 'this', 'The', 'A', 'All', 'To', 'to', 'just',
                           'and', 'you', 'are', 'at', 'on', 'in', 'if', 'it', 'when', 'while', 'I', 'what', 'have',
                           'got', 'but', 'up', 'for', 'more', 'we', 'can', 'THE', 'i'
-            , 'of', 'me', 'only', '-', 'YOU', 'be', 'that']
+                            ,'of', 'me', 'only', '-', 'YOU', 'be', 'that']
+
         for i in excluded_words: del self.count[i]
 
         sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
         # lista contenente in ordine le parole più usate escluse le parole inutili
+
 
         X, Y = [*zip(*sorted_count)]
 
@@ -119,13 +121,14 @@ class SReddit():
         if plot_ == True:
             plt.bar(X, Y)
             plt.show()
+
         if WordCloud_ == True:
-            # questo commentato è per fare la maskera tramite un'immagine presa da internet
+            # to use wordcloud with online image
             # mask_image = 'https://image.flaticon.com/icons/png/512/52/52191.png'
             # mask = np.array(Image.open(
             # requests.get(mask_image, stream=True).raw))
 
-            # questo è per creare una maschera tramite un'immagine in locale
+            # to use wordlcloud with local image
             mask = np.array(Image.open("img.png"))
 
             wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0,
@@ -136,6 +139,7 @@ class SReddit():
             plt.show()
 
         return sorted_count
+
 
     def hottest_ones(self, tocsv=False):
         '''
