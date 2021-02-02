@@ -2,6 +2,8 @@ import praw
 import pandas as pd
 import datetime as dt
 from collections import Counter
+import operator
+
 
 '''
 link utili:
@@ -27,6 +29,7 @@ class SReddit():
         scraping del subreddit definito nell'oggetto
         :return: dizionario
         '''
+
         reddit = praw.Reddit(client_id='z2edaKf81OaY2w',
                              client_secret='ZgEG_HottISxIa27_UlXipTDY8j-vA',
                              user_agent='WSBscraper',
@@ -89,9 +92,14 @@ class SReddit():
         conc_ = conc_items.split(' ')
         self.count = Counter(conc_)
 
+        sorted_count = sorted(self.count.items(), key=operator.itemgetter(1))
+        sorted_count= sorted_count[::-1]
+        print(sorted_count)
         if tocsv == True:
             to_csv([self.count], 'TOP USED WORDS')
-        return self.count
+
+
+
 
 
 
@@ -111,7 +119,7 @@ def to_csv(d, name ):
 #prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC', 'COMEX', 'iShare'])
+Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'COMEX', 'iShare'])
 
 posts = Sreddit.scraper(tocsv=True)
 
