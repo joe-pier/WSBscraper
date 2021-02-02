@@ -91,7 +91,6 @@ class SReddit():
     def top__used_words(self, tocsv = False):
         '''
         parole più utilizzate
-        NB bisogna ancora escludere quelle inutili come the of o to
         :return:
         '''
 
@@ -99,11 +98,19 @@ class SReddit():
 
         conc_items = '\n'.join(items)
         conc_ = conc_items.split(' ')
+
+        #è un dizionario
         self.count = Counter(conc_)
+
+
+        excluded_words = ['the', 'a', 'my', 'all', 'with','is', 'this', 'The', 'A', 'All', 'To', 'to','just', 'and', 'you', 'are', 'at', 'on', 'in', 'if', 'it','when','while','I', 'what']
+        for i in excluded_words: del self.count[i]
 
         sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
         if tocsv == True:
-            to_csv(sorted_count, 'TOP USED WORDS', header= ['word','occurencies'])
+            to_csv(sorted_count, 'TOP USED WORDS', header= ['WORD','OCCURRENCES'])
+
+
         return sorted_count
 
 
