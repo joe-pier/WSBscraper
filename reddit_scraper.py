@@ -70,6 +70,8 @@ class SReddit():
 
 
 
+
+
 def to_csv(d, name = 'REDDIT'):
     '''
     input è un dizionario.
@@ -83,11 +85,13 @@ def to_csv(d, name = 'REDDIT'):
 
 
 
-#prova del codice
-Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'COMEX'])
+#prova del codice#
+
+
+Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC', 'COMEX'])
 
 posts = Sreddit.scraper()
-to_csv(posts)
+#to_csv(posts) questo è ovviamente inutile da fare
 
 frequenze = Sreddit.frequency()
 to_csv(frequenze, 'FREQUENZE')
