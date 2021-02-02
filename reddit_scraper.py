@@ -9,16 +9,20 @@ https://datatofish.com/pandas-dataframe-to-sql/
 https://www.kite.com/python/answers/how-to-insert-the-contents-of-a-csv-file-into-an-sqlite3-database-in-python
 '''
 class SReddit():
-    def __init__(self, subreddit, limit, keywords, d=None):
+    def __init__(self, subreddit, limit, keywords, d=None, keywords_dict=None, count=None):
+        if count is None:
+            count = {}
+        if keywords_dict is None:
+            keywords_dict={}
         if d is None:
             d = {}
         self.subreddit = subreddit
         self.limit = limit
         self.keywords = keywords
         self.d = d
+        self.keywords_dict= keywords_dict
 
-
-    def scraper(self):
+    def scraper(self, tocsv=False):
         '''
         scraping del subreddit definito nell'oggetto
         :return: dizionario
@@ -44,10 +48,12 @@ class SReddit():
             self.d['id'].append(submission.id)
             self.d['comments'].append(submission.comments)
 
+        if tocsv==True:
+            to_csv(self.d, 'REDDIT')
         return self.d
 
 
-    def frequency(self):
+    def frequency(self, tocsv =False):
         '''
         per calcolare il numero di volte che una o più  keyword viene nominata
         per trasformarlo in un .csv basta usare la funzione to_csv
@@ -58,56 +64,58 @@ class SReddit():
 
         keywords = self.keywords
 
-        keywords_dict = dict.fromkeys(keywords, 0)
+        self.keywords_dict = dict.fromkeys(keywords, 0)
 
         for i in titoli:
             for j in i.split():
-                for k in keywords_dict.keys():
+                for k in self.keywords_dict.keys():
                     if j==k:
-                        keywords_dict[k]+=1
+                        self.keywords_dict[k]+=1
+        if tocsv ==True:
+            to_csv([self.keywords_dict], 'FREQUENZE')
 
-        return [keywords_dict]
+        return [self.keywords_dict]
 
 
-    def top__used_words(self):
+    def top__used_words(self, tocsv = False):
+        '''
+        parole più utilizzate, bisogna escludere quelle inutili come the of o to
+        :return:
+        '''
 
         items = self.d['title']
 
         conc_items = '\n'.join(items)
         conc_ = conc_items.split(' ')
-        count = Counter(conc_)
+        self.count = Counter(conc_)
 
-        return count
-
-
-
-
+        if tocsv == True:
+            to_csv([self.count], 'TOP USED WORDS')
+        return self.count
 
 
-def to_csv(d, name = 'REDDIT'):
+
+def to_csv(d, name ):
     '''
     input è un dizionario.
-    per creare direttamente il file .csv, di default MODIFICA il csv che contiene i post,
-    però può essere usato per creare il csv della funzione frequency
+    per creare direttamente il file .csv
     :return: dataframe pandas
     '''
     df = pd.DataFrame(d)
-    df.to_csv(name+'.csv', index_label= True, index=False)
+    df.to_csv(name+'.csv')
     return df
+
 
 
 
 #prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 3, ['GME', 'BTC', 'COMEX', 'iShare'])
+Sreddit = SReddit('wallstreetbets', 5, ['GME', 'BTC', 'COMEX', 'iShare'])
 
 
-posts = Sreddit.scraper()
-#to_csv(posts) questo è ovviamente inutile da fare
+posts = Sreddit.scraper(tocsv=True)
 
-frequenze = Sreddit.frequency()
-to_csv(frequenze, 'FREQUENZE')
+frequenze = Sreddit.frequency(tocsv=True)
 
-top_words = Sreddit.top__used_words()
-print(top_words)
+top_words = Sreddit.top__used_words(tocsv=True)
