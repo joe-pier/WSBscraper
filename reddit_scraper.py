@@ -104,6 +104,8 @@ class SReddit():
     def hottest_ones(self, d):
         '''
         attempt to catch the best reddit posts that are likely to become the top ones
+
+        tanto maggiore è il numero di upvotes e tanto minore è il tempo dal quale è stato scritto tanto più alto sarà il suo "hot_ratio"
         :return:
         '''
         upvotes = self.d['upvotes']
@@ -113,7 +115,8 @@ class SReddit():
 
         Delta_time = [-temp + actual_time for temp in time_]
 
-        temp_list = [a/(1+d)**b for a,b in zip(upvotes,Delta_time)]
+
+        temp_list = [a/b for a, b in zip(upvotes, Delta_time)]
 
 
         return temp_list
@@ -149,4 +152,6 @@ frequenze = Sreddit.frequency(tocsv=False)
 top_words = Sreddit.top__used_words(tocsv=True)
 
 
-ratio = Sreddit.hottest_ones(d=0.2)
+hot_ratio = Sreddit.hottest_ones(d=0.2)
+
+print(hot_ratio)
