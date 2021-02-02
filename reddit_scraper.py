@@ -1,3 +1,4 @@
+
 import time
 from collections import Counter
 from datetime import datetime
@@ -194,7 +195,7 @@ Sreddit.scraper(tocsv=True)
 frequenze = Sreddit.frequency(tocsv=True)
 
 
-top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=100)
+top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=1000)
 
 hot_ratio = Sreddit.hottest_ones(tocsv=True)
 
