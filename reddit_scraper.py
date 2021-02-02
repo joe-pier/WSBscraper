@@ -1,6 +1,6 @@
 import praw
 import pandas as pd
-import datetime as dt
+from datetime import datetime
 from collections import Counter
 import operator
 from operator import itemgetter
@@ -84,7 +84,8 @@ class SReddit():
 
     def top__used_words(self, tocsv = False):
         '''
-        parole più utilizzate, bisogna escludere quelle inutili come the of o to
+        parole più utilizzate
+        NB bisogna ancora escludere quelle inutili come the of o to
         :return:
         '''
 
@@ -111,15 +112,15 @@ class SReddit():
         title = self.d['title']
         upvotes = self.d['upvotes']
         time_ = self.d['time']
-
+        DateTime = [datetime.utcfromtimestamp(f).strftime('%Y-%m-%d %H:%M:%S') for f in time_]
         actual_time = time.time()
 
         Delta_time = [-temp + actual_time for temp in time_]
         hot_ratio = [a/b for a, b in zip(upvotes, Delta_time)]
 
-        lista = list(zip(title, hot_ratio))
+        lista = list(zip(DateTime, title, hot_ratio))
 
-        sorted_lista = sorted(lista, key= itemgetter(1), reverse=True)
+        sorted_lista = sorted(lista, key= itemgetter(2), reverse=True)
 
         if tocsv ==True:
             to_csv(sorted_lista, 'HOTTEST ONES')
@@ -148,7 +149,7 @@ def to_csv(d, name ):
 #prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'COMEX', 'iShare'])
+Sreddit = SReddit('wallstreetbets', 15, ['GME', 'BTC', 'COMEX', 'iShare'])
 Sreddit.scraper(tocsv=False)
 
 
