@@ -94,10 +94,10 @@ class SReddit():
 
         sorted_count = sorted(self.count.items(), key=operator.itemgetter(1))
         sorted_count= sorted_count[::-1]
-        print(sorted_count)
+
         if tocsv == True:
             to_csv(sorted_count, 'TOP USED WORDS')
-
+        return sorted_count
 
 
 
@@ -119,10 +119,10 @@ def to_csv(d, name ):
 #prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'COMEX', 'iShare'])
+Sreddit = SReddit('wallstreetbets', 100, ['GME', 'BTC', 'COMEX', 'iShare'])
 
-posts = Sreddit.scraper(tocsv=True)
+posts = Sreddit.scraper(tocsv=False)
 
-frequenze = Sreddit.frequency(tocsv=True)
+#frequenze = Sreddit.frequency(tocsv=True)
 
 top_words = Sreddit.top__used_words(tocsv=True)
