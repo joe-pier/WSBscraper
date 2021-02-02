@@ -101,7 +101,7 @@ class SReddit():
         return sorted_count
 
 
-    def hottest_ones(self):
+    def hottest_ones(self, d):
         '''
         attempt to catch the best reddit posts that are likely to become the top ones
         :return:
@@ -112,7 +112,7 @@ class SReddit():
         actual_time = time.time()
 
         Delta_time = [-temp + actual_time for temp in time_]
-        d=0.2
+
         temp_list = [a/(1+d)**b for a,b in zip(upvotes,Delta_time)]
 
 
@@ -149,4 +149,4 @@ frequenze = Sreddit.frequency(tocsv=False)
 top_words = Sreddit.top__used_words(tocsv=True)
 
 
-ratio = Sreddit.hottest_ones()
+ratio = Sreddit.hottest_ones(d=0.2)
