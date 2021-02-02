@@ -1,8 +1,41 @@
 ,time,author,title,body,id,comments
-0,2021-02-02 12:13:21.296522,stinkyjesus_69,"GOOD MORNING, US-BUDDIES - I DOUBLED MY POSITION IN $GME - DON‘T DISAPPOINT EUROPE 💎💎💎🙌🙌🙌",,lataoc,<praw.models.comment_forest.CommentForest object at 0x0D1D65E0>
-1,2021-02-02 12:13:21.484628,whataspecialpotato,"After etoro forced me to sell multiple GME lines yesterday, without my consent, causing big losses, I sold...my other investments and today that will become GME. That’s how this works right? 💎🙌 Buy the dip! 🦍 🚀 🌚 I’m full retard, this is not financial advice.",,lat9r6,<praw.models.comment_forest.CommentForest object at 0x0D1D6838>
-2,2021-02-02 12:13:21.702716,b00c,TOP 20 Institutional gainers that increased their exposure through $GME. Source: nasdaq.com,,lat8yw,<praw.models.comment_forest.CommentForest object at 0x0D1D6B08>
-3,2021-02-02 12:13:21.918049,RojerGS,"While we hold, help me work on my ""Diamond Hands 💎🙌"" game, so we have something else to do while the hedge funds drive themselves to the ground","I created a simple game called ""Diamond Hands"" and it is very simple: you just hold your position and see GME go 🚀🌕.
+0,2021-02-02 12:17:39.234264,Zoran1308,Just bought yesterday my first AMC stocks and bought today another 20! Germany stays strong! To the moon 💎 🙌 🚀,,latbd2,<praw.models.comment_forest.CommentForest object at 0x0E1882F8>
+1,2021-02-02 12:17:39.478164,c00chiemannnnn,"Portfolio not looking as good as yesterday , but what keeps me going is that as my tendies decrease, the 🌈 🐻 ability to stop us also decreases, they’re running out of tricks to play, they can’t afford to do the same short ladder attacks every single day, just hold u apes 🦍🦍💎🤝💎🚀🚀",,latb1t,<praw.models.comment_forest.CommentForest object at 0x0E1881A8>
+2,2021-02-02 12:17:39.730333,Heathen_Scot,Short Ladders Are Not Real,"This past couple of weeks WSB has been the QAnon of finance. Much of what you are told here is wrong.
+
+You can protect yourself to a degree by learning at least the very basics of how markets work. This post will explain to you how prices work on an exchange, and why ""short ladders"" are not even a coherent concept.
+
+**How markets work**
+
+Exchanges have [order books](https://en.wikipedia.org/wiki/Order_book) in which they track interest in a stock. Orders to buy and orders to sell stay in the order book until someone submits an order that matches their price.
+
+The highest price present on buy orders is called the *bid price*.
+The lowest price present on sell orders is called the *ask price*.
+The difference between the two is called the *spread*.
+
+When you submit an order to the exchange, it trades at the best price it can get. If you're selling, it will sell to the highest bidder even if you said you were willing to sell for zero.
+
+It is possible for companies to trade off-exchange, but when you are looking at the price of a stock on Google or wherever, the price is based on trades that took place on the exchange. For this reason it is common if you're looking at a feed giving you prices in real time to see the price going up and down between two prices for a number of seconds as people sell at bid price and buy at ask price.
+
+**Why short ladders are not possible**
+
+Short ladders are described as two hedge funds selling back and forth to one another at an increasingly lower price.
+
+This makes no sense for the following reasons.
+
+* Off-exchange transactions do not result in ticks. Nobody sees them.
+* You cannot target another participant on the exchange to sell to. You have to go through the order book.
+* If the order book has $10000 of bids at $100, you cannot drive the price down to $99 except by selling $10000 of stock at $100.
+
+This is a theory made up by someone who has no knowledge of how markets work - if they understood the basics they would at least try to make it believable.
+
+If you google ""short ladder attack"" you will get a bunch of hits on Reddit, [a StackExchange question](https://money.stackexchange.com/questions/135807/closing-shorted-positions-via-short-ladder-attacks) debunking it, and pretty much nothing else of note. If you google ""short attack"" your top two hits are a description from CFO.com of companies releasing a report at the same time they short e.g. alleging financial irregularities, and a piece of frothing madness from SeekingAlpha where some nutter in 2014 makes up a bunch of nonsense involving ""counterfeit shares"".
+
+This is not real.",latax6,<praw.models.comment_forest.CommentForest object at 0x0E188580>
+3,2021-02-02 12:17:39.945927,stinkyjesus_69,"GOOD MORNING, US-BUDDIES - I DOUBLED MY POSITION IN $GME - DON‘T DISAPPOINT EUROPE 💎💎💎🙌🙌🙌",,lataoc,<praw.models.comment_forest.CommentForest object at 0x0E1889D0>
+4,2021-02-02 12:17:40.168396,whataspecialpotato,"After etoro forced me to sell multiple GME lines yesterday, without my consent, causing big losses, I sold...my other investments and today that will become GME. That’s how this works right? 💎🙌 Buy the dip! 🦍 🚀 🌚 I’m full retard, this is not financial advice.",,lat9r6,<praw.models.comment_forest.CommentForest object at 0x0E188D90>
+5,2021-02-02 12:17:40.418228,b00c,TOP 20 Institutional gainers that increased their exposure through $GME. Source: nasdaq.com,,lat8yw,<praw.models.comment_forest.CommentForest object at 0x0E188E80>
+6,2021-02-02 12:17:40.758867,RojerGS,"While we hold, help me work on my ""Diamond Hands 💎🙌"" game, so we have something else to do while the hedge funds drive themselves to the ground","I created a simple game called ""Diamond Hands"" and it is very simple: you just hold your position and see GME go 🚀🌕.
 You can play the game here [https://mathspp.com/games/diamond-hands](https://mathspp.com/games/diamond-hands).
 
 I need your help to make the game better.
@@ -10,8 +43,8 @@ Can you please comment ideas for the sentences that the game shows? I need more 
 
 Edit 1: don't buy me awards! Spend your money on something else!
 
-Also, I don't give financial advice and you shouldn't base your investing strategy on the outcome of my game.",lat7px,<praw.models.comment_forest.CommentForest object at 0x0D1D6CB8>
-4,2021-02-02 12:13:22.135297,MrDeath2000,Why are no one talking about Turtle Beach Corp (HEAR),"Low PS- and PE- ratio and no debt. They have better numbers than competitors like CRSR and Logitech. HEAR would need to almost double their share price in order to get the same key figures. 
+Also, I don't give financial advice and you shouldn't base your investing strategy on the outcome of my game.",lat7px,<praw.models.comment_forest.CommentForest object at 0x0E188E08>
+7,2021-02-02 12:17:40.983701,MrDeath2000,Why are no one talking about Turtle Beach Corp (HEAR),"Low PS- and PE- ratio and no debt. They have better numbers than competitors like CRSR and Logitech. HEAR would need to almost double their share price in order to get the same key figures. 
 
 &#x200B;
 
@@ -23,4 +56,1157 @@ Insider selling also very low and the recent sales were from options which might
 
 &#x200B;
 
-There are so many good things about this company and it seems really cheap in a market where everything is expensive. What are people thoughts on this company? What am I missing? I bought at 27 and I think it could go to at least 45 short term.",lat7hl,<praw.models.comment_forest.CommentForest object at 0x0D1D6DA8>
+There are so many good things about this company and it seems really cheap in a market where everything is expensive. What are people thoughts on this company? What am I missing? I bought at 27 and I think it could go to at least 45 short term.",lat7hl,<praw.models.comment_forest.CommentForest object at 0x0E199178>
+8,2021-02-02 12:17:41.237935,NYNickET,Titanium Scrotum Retards $GME ! ! !,"**If you are a paper hands crybaby beeeotch don’t read any further than this line.**
+
+For the rest of you *Titanium Scrotum Retards* know that I am proud of each and everyone of you.
+
+What we are doing is monumental. What we are doing is history in the making ! ! !
+
+They are playing every dirty underhanded trick in the book. **We still stand tall and proud ! ! !**
+
+While some of us took a hit today never forget they are losing billions.
+
+If you bought in at a higher price realize these are bargain basement shares for our 💎🙌's taking.
+
+**DON’T Fük-iN SELL!!!!!** **$GME$. . . .** REMEMBER APE TOGETHER STRONG 🦍 🦧
+
+Hold tight my **$GME** Brothers, the gates are in our sites and they will open. . . and when they do ***it will be glorious!!***
+
+***i am not a financial advisor. . . i am 100% a ree-tard. .***
+
+***Love You !***",lat6dp,<praw.models.comment_forest.CommentForest object at 0x0E199340>
+9,2021-02-02 12:17:41.484604,baha12022001,LET'S GET #DELIVERTHESHARES AND #STOPCOUNTERFEITINGSHARES TRENDING ON TWITTER,"As the media seems to simply pick up trends on Twitter (initiated by the hedgefund bots) without fact-checking and link them to WSB, I suggest to get these two hashtags trending. 
+
+Yesterday, the SEC released the **""fails-to-deliver""** data for the **first half of January** and it it's thoroughly shocking to see that about **1,7 million shares** have been accumulated in this list within only 15 days. The next data release for the second half might be nuclear 🦍🚀.
+This is indicates extremely criminal issuing of counterfeit shares and should be investigated by every credible news outlet (please pick this up WaPo/NYT) and certainly by federal prosecutors. Not to mention the short-ladder attacks that manipulate the price to scare us into selling.
+
+I call on everyone to follow this plea and get these two hashtags trending! Btw if we HOLD 🤲🏾💎🤲🏾💎 they might literally get crushed scrambling for every single share that they can get to cover.
+
+Further TIPS before the market opens: 
+1. I recommend you to NOT buy on margin so that they cannot get our shares 
+2. Buy NEW shares on Fidelity, Vanguard, TD... hold your GME shares on RH
+3. REMOVE $1,000 AND $420,69 LIMITS
+4. EXPECT EVERYTHING 
+5. DON'T BELIEVE THE FAKE NEWS
+
+(This is not financial advice and I'm not a financial adviser. I'm just a fellow ape who likes the stock 🍌🦍)",lat5tv,<praw.models.comment_forest.CommentForest object at 0x0E1999B8>
+10,2021-02-02 12:17:41.770824,Kirbylau10,Not much but still holding!! 💎🤲🏽,,lat5oq,<praw.models.comment_forest.CommentForest object at 0x0E199D18>
+11,2021-02-02 12:17:42.250730,snoopy9134,Buying the dip.,,lat5lw,<praw.models.comment_forest.CommentForest object at 0x0E199F28>
+12,2021-02-02 12:17:42.488386,zerospecial,I’m selling my shares ¯\_(ツ)_/¯,,lat5jz,<praw.models.comment_forest.CommentForest object at 0x0E199EF8>
+13,2021-02-02 12:17:42.695814,AutoModerator,"Unpinned Daily Discussion Thread for February 02, 2021","Your daily trading discussion thread. Please keep the shitposting to a minimum.
+
+**Read the** [**rules**](https://www.reddit.com/r/wallstreetbets/wiki/contentguide) **and make sure other people follow them.**
+
+|^(Navigate) ^(WSB)|^(We) ^(recommend) ^(best) ^(daily) ^(DD)|
+|:-|:-|
+|**DD**|[All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3ADD) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADD&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADD&restrict_sr=on&t=week)|
+|**Discussion**|[All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3ADiscussion) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADiscussion&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADiscussion&restrict_sr=on&t=week)|
+|**YOLO**|[All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3AYOLO) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AYOLO&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AYOLO&restrict_sr=on&t=week)|
+|**Gain**|[All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3AGain) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AGain&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AGain&restrict_sr=on&t=week)|
+|**Loss**|[All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3ALoss) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ALoss&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ALoss&restrict_sr=on&t=week)|
+
+[**Check out WSB.GOLD stats generated live from WSB activity**](https://wsb.gold/public/dashboard/e65fcfcb-70a4-4d86-b7fb-888057c67881)",lat47o,<praw.models.comment_forest.CommentForest object at 0x0E1A5B98>
+14,2021-02-02 12:17:43.083787,AutoModerator,"Daily Discussion Thread for February 02, 2021","Your daily trading discussion thread. Please keep the shitposting to a minimum. 
+
+^Navigate ^WSB |^We ^recommend ^best ^daily ^DD
+:--|:--                                 
+**DD** | [All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3ADD) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADD&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADD&restrict_sr=on&t=week)
+**Discussion** | [All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3ADiscussion) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADiscussion&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ADiscussion&restrict_sr=on&t=week)
+**YOLO** | [All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3AYOLO) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AYOLO&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AYOLO&restrict_sr=on&t=week)
+**Gain** | [All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3AGain) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AGain&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3AGain&restrict_sr=on&t=week)
+**Loss** | [All](https://reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3ALoss) / [**Best Daily**](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ALoss&restrict_sr=on&t=day) / [Best Weekly](https://www.reddit.com/r/wallstreetbets/search?sort=top&q=flair%3ALoss&restrict_sr=on&t=week)
+
+
+[Weekly Earnings Discussion Thread](https://www.reddit.com/r/wallstreetbets/search?sort=new&restrict_sr=on&q=flair%3A%22Earnings%20Thread%22)
+
+**Read the [rules](https://www.reddit.com/r/wallstreetbets/wiki/contentguide) and make sure other people follow them.**
+
+Try [No Meme Mode](https://www.reddit.com/r/wallstreetbets/search/?q=-flair%3AMeme%20-flair%3ASatire%20-flair%3AShitpost&restrict_sr=1&t=day&sort=hot), also accessible through the top bar.",lat43j,<praw.models.comment_forest.CommentForest object at 0x0E01DEC8>
+15,2021-02-02 12:17:46.003357,aidv,"I went in for the hold, I'll stay in for the gold","You can paperhand as much as you want. I'm not budging.
+
+Consistency is key. Instead of being afraid of losing, be excited about learning.
+
+What will you learn once this is over? You don't know, because it's not over yet.
+
+If you feed your fear, you'll continue living in fear in the future too.
+
+A life you could've lived in the future would probably be lost in the shadows of fear every time you have to make a decision in your life.
+
+Why? Because every time a situation didn't fit your narrative, you pulled out.
+
+And that's why you will always pull out as soon as you feel uncofortable.
+
+Fear is uncomfortable.
+
+Unfortunately for fear, I feed from it.
+
+Diamond hands only 💎✋🤚",lat3p1,<praw.models.comment_forest.CommentForest object at 0x0E02C310>
+16,2021-02-02 12:17:46.234360,Caer-bannog,This guy just wrote the single most important piece of DD on GME you will read this week.,"u/forzan wrote [this beauty](https://www.reddit.com/r/wallstreetbets/comments/lanf94/gme_is_a_time_bomb_and_its_highlighting_a_severe/?utm_medium=android_app&utm_source=share) and everyone needs to read it STAT.
+
+
+TL;DR:
+
+
+- Short interest seemingly falling despite no shares left to borrow (also caused by ticker dropping over 10% in a day which makes it unshortable), probably because it's masked by millions of new synthetic longs created on 28/01
+
+
+- Synthetic longs likely defensively created by Market Makers who don't pay interest on them for 21 days, to buy time to protect themselves in the event HFs and brokers aren't enough to cover the squeeze;
+
+
+- Simultaneously, DTCC recognized financial liability in this squeeze could eventually reach clearing houses if the market makers went bankrupt and on the same date increased collateral requirements to purchase GME to 100%;
+
+
+- MMs can keep this going for a really long time if needed, but that does not mean forever.
+
+Now u/forzan get in here so no one thinks I wrote this shit.
+
+Also this is not financial advice, I am a professional window licker. Do your own DD and reach your own conclusions.",lat3h8,<praw.models.comment_forest.CommentForest object at 0x0E02C640>
+17,2021-02-02 12:17:46.484661,Moosemanjim,It’s not much but I’m in for 💯 shares of CINE from UK 🇬🇧 🚀🚀🚀,,lat2ys,<praw.models.comment_forest.CommentForest object at 0x0E02C868>
+18,2021-02-02 12:17:46.692046,New_Torch,Not a loss if we don't sell. Keep 💎✋ my fellow 🦍🦍,,lat2pw,<praw.models.comment_forest.CommentForest object at 0x0E02C508>
+19,2021-02-02 12:17:46.922903,ChrisppApples,HOLDING - NO SWEAT! THIS IS MY UBER MONEY!!!!,,lat25a,<praw.models.comment_forest.CommentForest object at 0x0E02C820>
+20,2021-02-02 12:17:47.129865,buttface112211,"-237,000 on GME yesterday, Still holding 💎✋",,lat1vh,<praw.models.comment_forest.CommentForest object at 0x0E02CEF8>
+21,2021-02-02 12:17:47.378161,Adara_Rami,Think I need some more loss porn in here. Might just drop 6k more and hold even if it goes to $0. Me like shiny 💎🦧🍌,,lat0ev,<praw.models.comment_forest.CommentForest object at 0x0E0300A0>
+22,2021-02-02 12:17:47.620397,FireRngesus,The stock price hasn't moved,"Yesterday was 95% algo and short manipulation. We know this, we can see the duped charts for GME and AMC, and we can see the short buy and sells driving the price down.
+
+
+This means the true stock a value is still around 300. If the ladder attacks continue this week (which they will) the cheaper this stock gets, the more hilarious our realised gains are when the squeeze happens.
+
+
+This presents an incredible buying opportunity this week, to load up and absolutely make 5-10x on your money, whilst killing the banks are the same time.",laszcr,<praw.models.comment_forest.CommentForest object at 0x0E030838>
+23,2021-02-02 12:17:48.030741,MIA4real,"For those stuck on Robinhood, downgrade to a cash account to prevent your shares from being lent out to short sellers","Fellow autists,
+
+If you are stuck on RH until this saga is over (F), RH **by default** lends out your shares to short sellers (and also pockets the interest payments).
+
+There’s been a rumor that placing high limit sells prevents your shares from being lent out to short sellers, this has been debunked and is thoroughly false.
+
+The **only** way to prevent your shares from being lent out is to downgrade your account into a [Cash Account](https://robinhood.com/us/en/support/articles/robinhood-accounts/). RH makes this a pain in the ass to do so, so I’ve written a step-by-step guide:
+
+1. Go to your account tab (person icon on the bottom right)
+2. Go to “Investing”
+3. Scroll down to “Something Else”
+4. Scroll down **again** to “Something Else”
+5. Type in: Please downgrade my Robinhood account into a “Robinhood Cash” account immediately 
+
+Someone from RH support will then convert your account into a cash account and prevent your shares from being lent out.
+
+Note: this does turn off instant settlement, for example if you sell a stock - the money won’t appear in your account until 1-2 days later. This also turns off instant deposit, who cares though as RH prevents you from buying so many stocks at this point.
+
+*obligatory disclaimer for the SEC intern: this isn’t financial advice, people can do this if they want to*
+
+💎🤚🚀🚀🚀
+
+Edit: The default RH account type is “Robinhood Instant”. You can also upgrade to a “Robinhood Gold”. **Both** of these account types let RH lend your shares out
+
+Edit2: apparently RH contact agent button only shows up for some, changed the instructions",lasy6r,<praw.models.comment_forest.CommentForest object at 0x0E030C10>
+24,2021-02-02 12:17:48.283852,Muzkey,Won't stop can't stop💎🙌🇸🇪,,lasxxh,<praw.models.comment_forest.CommentForest object at 0x0E030E20>
+25,2021-02-02 12:17:48.518386,_Unoriginal_Name,How long can they keep the price down with a short ladder attack?,"First of all 💎🙌 and in it to win it!
+
+But while I understand that they're driving the price down using short ladder attacks, how long can they keep this suppressed for?
+
+My understanding is that the shares they're trading back and forth to each other in batches of 100 were borrowed on margin or aren't actual shares held by anyone. So do they not have to return these shares at some point and if so by when?
+
+Like when it went to from 450 to 112, it bounced back relatively quickly. So why hasn't this short ladder attack bounced back as quick?",lasxeh,<praw.models.comment_forest.CommentForest object at 0x0E0354F0>
+26,2021-02-02 12:17:48.910420,flovidchan,There is still time to repent for your GME greed! Join the church of PALANQUEER and redeem yourself!,"-Multiple new partnership announcements. Check.
+
+-CEO with crazy hair who lives in a literal treehouse. Check
+
+-Creating skynet that will enslave us in an AI guided techno-hell. Check.
+
+-Kathy upgrading Palantir which means something idk but probably also good news. Check.
+
+Didn't watch their demo day but from what I read on here from people who also didn't watch it, it went well.
+
+Earnings report on Feb 11. PLTR has beaten earnings projections in the past. They should be able to do it again, and we will be on a moon mission except we will miss the moon entirely and land on mars.
+
+The ONLY thing PLTR has going against it is that the CEO doesn't wear a black turtle neck.
+
+#BELIEVE 
+#PALANQUEERS 
+#THEFIRERISES",lasx1h,<praw.models.comment_forest.CommentForest object at 0x0E035A30>
+27,2021-02-02 12:17:49.414400,oxyoxyboi,Don’t lost hope and money to shorts,"The current action and premarket is due to low volume trading downwards between hedgie bots to drive price lower. In actual fact this DOES NOT reduce short % as its a matter of shifting shares around. There is no large dump from long holders.
+
+3 key advice:
+A. Do not panic sell - you know about the squeeze and that takes time. By now you should have enough or excess cash to back your holdings since brokers increased margins to 100% on meme stocks
+
+B. Remove your stop losses now and don’t wait till market open. Your PC or phone app will definitely crash and good chance it will be force sold. Refer to A about your cash reserve 
+
+C. Set buy limits as bots push it down, im DCA my shares from 264 and set buy limits in blocks of 5 for $190, 180, 170 and 160.
+
+Finally since you are in for the LONG game, put the phone away and go for a walk or jerk off or sniff people farts  💨 to not grow fear, thats what the shorts want you to feel.
+
+Not financial advice and 🐒🦍🦧💪🏻💪🏾💪🏽💪🏿💎🤚🚀🪐🖕🍋",laswws,<praw.models.comment_forest.CommentForest object at 0x0E035CE8>
+28,2021-02-02 12:17:49.695508,The_Prince_of_LA,How to Win GME,"This week, we have experienced blatant market manipulation from the other side. They have spread misdirection via fake stories from corrupt reporters. They have used computer algorithms that buy and sell from each other to drive the price down. Monday's exact -100 result was a giant FU to us, telling us they control the price.
+
+However, we have the power of numbers and we have the power of public sentiment. We are fighting an honorable battle against an EVIL foe. We are on the side of good, and there is a very simple strategy that we can use to win.
+
+**Go to a cash account**. If EVERYONE with a brokerage account, even people who don't own GME stock, contacted their broker and turned their account into a CASH account, that will stop our brokers from lending our shares to hedge funds to use to short stocks. If EVERYONE did this, all lent out shares would be called back and hedge funds would have to close their short positions by BUYING shares. They will have to buy shares all across the market and those stocks will go up in price. They will have to sell some long shares in order to come up with capital to close their shorts, but overall the market should be neutral.
+
+We don't control fake news. We don't manipulate stocks. We just like stocks and like talking about them. Our strength is in our solidarity and we have the support of the people. If we can make this into a movement and ask people to stop using margin and turn their accounts into CASH accounts in solidarity with us, we will win. Also, it will PISS them off because they can't cheat their way around it.
+
+CASH ACCOUNT FTW.
+
+&#x200B;
+
+https://preview.redd.it/rkf53l4fm1f61.png?width=500&format=png&auto=webp&s=4c40d12a0b3ab5dab4337d0837527ead4b4fbf71",lasuet,<praw.models.comment_forest.CommentForest object at 0x0E039898>
+29,2021-02-02 12:17:50.160067,atjeff1,"As Morale Drops, Just Remember That We're All Still Here Together - Money Can't Buy Our Loyalty",,lasu64,<praw.models.comment_forest.CommentForest object at 0x0E039BF8>
+30,2021-02-02 12:17:50.422923,natenicholson,PEP TALK FOR TODAYS LINE HOLD FOR GME AND AMC💎💎💎💎🚀🚀🚀🚀🚀,"FOR THE AMC BAG HOLDERS🚀🚀💎💎💎💎💎.
+
+WE HOLD THE FUCKING LINE. Great moments are born from great opportunity. And that's what you have here tonight, boys. That's what you've earned here tonight. Stonk. If we bought 'em ten times, they might win nine. But not this stonk. Not tonight. Tonight, we hold them. Tonight, we stay with them. And we shut them down because we can! Tonight, WE are the greatest AMC BAGHOLDERS in the world. You were born to be retards. Every one of you. And you were meant to be here tonight. This is your time. Their time is done. It's over. I'm sick and tired of hearing about what great tendies the MM’s have. Screw 'em. This is your time. Now go out there and take it.",last2g,<praw.models.comment_forest.CommentForest object at 0x0E03A418>
+31,2021-02-02 12:17:50.936429,alexduma,"Average Euro retard will HOLD!!!! Not much but it’s honest retard money. Pls hold together, get back up to $300 and then to the moon!! 🚀🚀🚀🚀🚀🚀",,lasszo,<praw.models.comment_forest.CommentForest object at 0x0E03A658>
+32,2021-02-02 12:17:51.184902,noobinpyjamas,HOLD 💎👐 Don't let yourself get scared by the media and the ladder attacks. I'm at a loss but that was to be expected of this week if you had followed the sub at all over the weekend. I like this stock. I don't want to sell mine to the hedge funds until they have to pay BIG 🚀🚀🚀,,lasstd,<praw.models.comment_forest.CommentForest object at 0x0E03AA90>
+33,2021-02-02 12:17:51.441959,h4k01n,It's not a loss unless we sell! Netherlands is holding the line 🇳🇱,,lasr1z,<praw.models.comment_forest.CommentForest object at 0x0E03AEB0>
+34,2021-02-02 12:17:51.815604,Bastardo187,"Got in the game late, I'm HOLDING. DIAMOND 👐🏾💎💎💎🚀🚀🚀🚀🪐🪐🪐🪐🪐",,lasqyc,<praw.models.comment_forest.CommentForest object at 0x0E0451A8>
+35,2021-02-02 12:17:52.063485,onuf_,I ain't no paper handed bitch.,,lasqvp,<praw.models.comment_forest.CommentForest object at 0x0E045298>
+36,2021-02-02 12:17:52.268746,PDAL3,DOING ALL I CAN FROM AUSTRALIA TO SUPPORT THE LINE LETS GO🚀🚀🚀🚀,,lasqnz,<praw.models.comment_forest.CommentForest object at 0x0E0455F8>
+37,2021-02-02 12:17:52.498256,N137s,More is coming before we dine on the moon! VW took days before they when all the way up. Hold on Apes 🦍 with 💎🙌🏼💎🙌🏼,,laspkp,<praw.models.comment_forest.CommentForest object at 0x0E058340>
+38,2021-02-02 12:17:52.967143,Tradergurue,"After some extensive research, I present to you my master findings for the future of $BB",,laso52,<praw.models.comment_forest.CommentForest object at 0x0E058DA8>
+39,2021-02-02 12:17:53.273331,BothAd2391,Anybody things $CLDR can start a rally from here?,"I have been holding $CDLR since it was at 9$. And I think it still can make a rally and break the ATH pretty soon. Here are my reasons to believe that. 
+
+**Technicals**
+
+It has broken the downtrend and is continuously making new higher highs. Next major resistance levels I see are only around 20$, 22$ and 23$
+
+[CLDR Daily chart](https://preview.redd.it/padvj8ahh1f61.png?width=2998&format=png&auto=webp&s=f79a43bf031ef5fde394d8877d1aa55dd2016258)
+
+&#x200B;
+
+**Option Chain**
+
+From option chain perspective it looks like it is doing pretty good too. 
+
+https://preview.redd.it/iw9dciuxh1f61.png?width=2614&format=png&auto=webp&s=12aa7d766adc5881c56f07dd99f9c6488ca7d047
+
+From [thefly.com](https://thefly.com) 
+
+https://preview.redd.it/sq51hac1i1f61.png?width=1496&format=png&auto=webp&s=549b471cb56a3238982ec80a644ff3eecd68a319
+
+**Fundamentals**
+
+From fundamentals perspective I think they are doing much better than where their stock price stands. I feel they are undervalued due to some crazy events last year after they merged with their competitor and their own CEO left the organisation. 
+
+Since the change of the CEO there has been some uptick movement and probably it can pick up some pace soon. I think this can be another hidden gem. 
+
+Open to suggestions/discussions on it to see if anybody would like to join me in the journey.",lasn30,<praw.models.comment_forest.CommentForest object at 0x0E05D088>
+40,2021-02-02 12:17:53.525249,S3R0-,Thomson Reuters Account Data - includes volumes & short info 🙌💎🚀,,lasm3o,<praw.models.comment_forest.CommentForest object at 0x0E05D148>
+41,2021-02-02 12:17:53.819864,jager_mcjagerface,"Last week my portfolio reached 30k, didn't sell then, not selling now, not selling under 5k.",,lasltj,<praw.models.comment_forest.CommentForest object at 0x0E05DD78>
+42,2021-02-02 12:17:54.149105,Daineh,Question regarding GameStonk short,"So these assholes - Melvin Autists - short tf out of GME, price goes crazy in January - they short again, who’s to say they can’t keep shorting and then manipulating the price as they have been doing to cover their previous short position. 
+
+Sorry idk much about the details but let’s say they shorted 140% @ $7 or $20 whatever it was.. price goes to 400, they short again another 140% and give back all the stock they owed in the previous short. Is there a law against this? I’m not a professional I was just wondering how they could possibly maneuver out of this with how they’ve manipulated the market these past several days. So they short again at 300,400,200 whatever the price, then buy it back or whatever slowly throughout the coming weeks to pay back the higher cost short. 
+
+Just a thought and I know I’ll prob get roasted but it’s cool I would do that if I fucked up if I could lol seems like a logical thing to do considering they can manipulate the market when it’s so volatile",laslas,<praw.models.comment_forest.CommentForest object at 0x0E0689E8>
+43,2021-02-02 12:17:54.486633,navishxo,"HOLDING AND CRYING, 💎👐💎🥲",,lasky7,<praw.models.comment_forest.CommentForest object at 0x0E068EF8>
+44,2021-02-02 12:17:54.955324,berrieds,"My only regret is that I cannot invest any more. I will HOLD on principle, something Wall Street doesn't understand. 💎✋ and love to all my fellow autists.",,laskn4,<praw.models.comment_forest.CommentForest object at 0x0E071400>
+45,2021-02-02 12:17:55.242088,PoisonPanty,Reminder that this man is batting for the other team,,laskii,<praw.models.comment_forest.CommentForest object at 0x0E071CA0>
+46,2021-02-02 12:17:55.480874,Environmental-Camp28,Greetings from Switzerland - We've joined the servers and we HOLDDD,,lasj5h,<praw.models.comment_forest.CommentForest object at 0x0E071A30>
+47,2021-02-02 12:17:55.740606,Phaeax,Hold! Diamond Back Gorilla Stronger than Silver Back Gorilla,,lasipu,<praw.models.comment_forest.CommentForest object at 0x0E07B268>
+48,2021-02-02 12:17:55.999694,thoddi77,Just entered the game from Germany 🚀🚀,,lashzd,<praw.models.comment_forest.CommentForest object at 0x0E07B5F8>
+49,2021-02-02 12:17:56.251573,inlumino77,U.K. 🇬🇧 HOLDING strong adding more position today 🦍🚀🧀 couldn’t find the moon emoji but moon is made from cheese so same right?,,lashy1,<praw.models.comment_forest.CommentForest object at 0x0E07B6A0>
+50,2021-02-02 12:17:56.535615,Mitesite,The dip before the Volkswagen short squeeze is misleading,"I keep seeing people reference the dip that Volkswagen took before it squeezed, but I think that it's completely misleading. Volkswagen went from a high of €421.18 on 10/16/2008 to a low of €198.72 on 10/24/2008, a drop of 52.8%, but this had nothing to do with the short squeeze. This was part of a broad market pullback in which the DAX 30 (German equivalent of the DOW) fell over 25% between 10/14 and 10/24, and several of the largest German companies such as SAP also fell over 50% like Volkswagen.
+
+The short squeeze wasn't initiated until Sunday, 10/26, when Porsche unexpectedly announced that it effectively raised its stake in Volkswagen to 74% through call options. This is what triggered panic among short sellers due to the fact that this would reduce Volkswagen's public float to just 1%, while 12.8% of the stock was shorted. As a result, the stock rocketed from its Friday closing price of €208.16 to a high of €978.92 on Tuesday, 10/28, a rise of 370% in 2 days. It quickly fell to a closing price of €508.84 the next day, and continued falling in the months following.
+
+So, what I'm saying is the VW dip that has been spread everywhere across this sub had nothing to do with the subsequent short squeeze. Please let me know if I'm missing something here.",lasg2i,<praw.models.comment_forest.CommentForest object at 0x0E098F88>
+51,2021-02-02 12:17:57.201197,salatthebroken,💎🙌 Never gonna sell. Patience is key to the squeeze 💎🙌,,lasdov,<praw.models.comment_forest.CommentForest object at 0x0E09D070>
+52,2021-02-02 12:17:57.507558,FapTapAnon,$GME ride or die. Never selling. Could have sold at the peak but I’ve been holding since $38 and kept buying.,,lasd75,<praw.models.comment_forest.CommentForest object at 0x0E09DCB8>
+53,2021-02-02 12:17:57.959073,MildlyInsulting,"It's not a loss if you don't sell, Poland holding strong! Just eat some pierogi and relax. 💎🙌🏻",,lascw1,<praw.models.comment_forest.CommentForest object at 0x0E116508>
+54,2021-02-02 12:17:58.452868,Leenixus,"300k to 200k - If i can do it, you can do it. Wait for the squeeze. We will see double digits before the squeeze even happens. All my lifesavings in GME.",,lascqq,<praw.models.comment_forest.CommentForest object at 0x0E0B7088>
+55,2021-02-02 12:17:58.897030,PoltRomero,"Let's show the real Robin Hood (NYC charity for children in need) some love, they've been wrongfully attacked by some twitter users!",,lasc6q,<praw.models.comment_forest.CommentForest object at 0x0E0B7658>
+56,2021-02-02 12:17:59.171381,ShyDudeAskingYou,For those of you who are insecure about whats happening with the price,"The stock's price is being manipulated by bots of the huge hedge funds - what they basically do is resell stocks to each other - this tricks the whole algorithm and it makes the price go down - in reality we are not selling, its the manipulation that does this  
+
+
+Here: [https://www.nasdaq.com/market-activity/stocks/gme/latest-real-time-trades](https://www.nasdaq.com/market-activity/stocks/gme/latest-real-time-trades) you can see in real time GME stocks being traded - literally there are 100 shares bought all over the place, at the same second - literally  
+
+
+I made this post for those of you who are not able to understand the whole situation - so I made the post as simple as possible just to make you feel safe  
+
+
+This is not financial advice, I just like the stock! Diamond hands!!!! Sry, no emojis because Im from the work laptop",lasc6o,<praw.models.comment_forest.CommentForest object at 0x0E0C22B0>
+57,2021-02-02 12:17:59.721094,jimmyrosssss,My buddy can’t by GME in Aus so he’s wired me the money to buy on his behalf here in UK. (Had to reupload previous post due to potentially sensitive info being posted by mistake). WE LIKE THE STOCK.,,lasc5x,<praw.models.comment_forest.CommentForest object at 0x0E0C27A8>
+58,2021-02-02 12:17:59.965039,notCUSTOMMADE,How to get gud holding 💎🚀🌑," 
+
+Hey guys, first of all, mods please don't remove this.  
+Let's get to it.  
+I was here for long, without account lurking and just watching what others 🦧did with their money.  
+I saw huge losses, I saw wins, but mainly losses.  
+This post is not about advice on how to invest or something, but rather to just give you health advice.  
+Let's start:
+
+1. Don't go to your stocks app opening it and closing, hoping something happens. The best way to deal with this is to go out and do stuff to keep your mind off. Why should you do this? Is very unhealthy for the brain to continuously check for new stuff.
+2. This is also a great tip. While investing is fun and all, you should also look for factors that will show you that you are slowly going into a depression. Look them up, they are easy to spot, and spotting early can help you.
+3. Take time off social media, and walk or exercise if you can. While sitting on your pc and phone is also fun, your body needs to work out so it can work properly. You can make a minigame and if $GME stock goes up by 5% you do 5 pushups etc.
+
+These are some tips I have for you folks. If you need more tips just google them. But don't forget TO HOLD AND WHILE HOLDING TO WORK OUT.  
+This community brought a smile to my face. That's why I want to help others.  
+💎💎💎👐👐👐🚀🚀🚀🌑🌑🌑",lasc3f,<praw.models.comment_forest.CommentForest object at 0x0E0C2B20>
+59,2021-02-02 12:18:00.207636,akvarista11,Something to keep you from paperhanding,"From u/Anttte 
+
+Before I head to bed I feel the need to leave behind three important pieces of information behind for tomorrow. The first one is this:
+
+https://www.barchart.com/stocks/quotes/GME/interactive-chart
+
+This link provides the information about todays volume. The volume represents the trades that are happening. And today the volume has been really low. This means people are not selling. We have been holding, which should drive the price up.
+
+The second one is this:
+
+https://eresearch.fidelity.com/eresearch/gotoBL/fidelityTopOrders.jhtml
+
+This link provides the information about todays supply/demand considering buy and sell orders (on fidelity). The demand is WAY too high for the supply to meet, which should also drive the price up.
+
+The third is this:
+
+https://www.reddit.com/r/wallstreetbets/comments/la8ox3/at_these_levels_its_not_about_the_price_of_the/
+
+Hedge funds are ""fraudulently creating more shares"" and retail are holding. They are using very ugly tactics in order to bring the price down to a number that satisfies them since even $225 is beyond the amount they are prepared to absolutely-have-to-fucking-pay.
+
+
+Please stay educated. Do not trade emotionally. And lastly get some rest. We do not know when this shitshow will end. But hopefully we will have left a stain of hope in history behind us.
+
+
+Please feel free to repost this to infinity. It may satisfy alot of people (like myself) who feel extremely anxious after today, and need a pat on the shoulder.",lasayo,<praw.models.comment_forest.CommentForest object at 0x0E0C2BE0>
+60,2021-02-02 12:18:00.513247,9manloon,GME Short Interests due day,,las87t,<praw.models.comment_forest.CommentForest object at 0x0E0C74A8>
+61,2021-02-02 12:18:00.993563,FewPhase8020,AMC! We're Not Fucking Leaving!,,las6y8,<praw.models.comment_forest.CommentForest object at 0x0E0C7B20>
+62,2021-02-02 12:18:01.313619,kingme805,Theme Park,"-SHITPOST-
+
+TLDR: liftoff is a waiting process. Hold on to your hair, and your bladder..
+
+Late 2000s. Knotts Berry Farm. It has all the typical rides that any theme park would have. The half-pipe, the weird and fun twisty ones, and the water ride that would wet your gonads like a $20 hooker about to pass out from sucking a bunch of pp all day. “Hmm, tongue swipes..” you think to yourself. “Cool.”
+
+You’ve just gotten off this ride and you’re about to hop on the next one, the Accelerator. Now this fucking thing. This fucking ride is something. You’ve been looking forward to this one all day. Simply put, it has the mechanics of a Tesla before Tesla’s we’re even cool. 0-60 in under 4 seconds? You think, “Shit, sign me up.” Meanwhile, your crotch is drying off from those pitiful wank-licks you just received. You’ll end up hopping on this one with dry pants and a new vigor. Among one of its characteristics is the massive vertical loop. You see people entering the ride and subsequently hold on for dear life to any part of the visibly worn metal guards as they rocket past the loading zone and scream with delight. Shouldn’t have done your hair today. It gives off the appearance of wet, freshly cut grass plumps after a ride. “Oh well..” you think to yourself.
+
+While you’re waiting in the line for the ride, you come to notice the heat. It’s a standing heat and it really bothers you all of a sudden. Because of that, you begin to notice the smell. Oh god, some kid just farted in front of you. What you would do to give that little shit a lecture, but you can’t. His parents are right there with him. Okay, besides the heat and essence of booty particles, what els- “waiting!” Why the fuck do you and a bunch of other people commit to waiting in this godforsaken line together? Being a retard, you know you should’ve bought the express pass for an extra $20. 
+
+“Well fuck.” You have another 10 minutes before it’s your turn on the ride. “Might as well check my phone.” -a Motorola Razr. You pull it out and flex that shit in front of the crowds around you, but you realize everyone around you has one. Feelings of insecurity arise. “Damn. This phone ain’t that special..” you think to yourself as you’ve slowly inched up to the next in line on the Accelerator. 
+
+You feel a woosh of air as the rollercoaster blasts off out of the sight of everyone as they’ve entered a vertical climb to the heavens. After about a minute, the carts come back to their stationary position right in front of you. “Probably shouldn’t have put that product in my hair. Shit’s all messed up by now.” By now, you’ve totally forgotten about that sorry, fart-particle homunculus as you line up. Your crotch is nice and dry now as you adjust your pants to fit comfortably in your seat. 
+
+Your palms have begun to sweat a little bit as you make your way inside the cart. Your heart starts beating a little bit faster. When the ride operator checks with you, he asks if you’re doing all right. You choke up for a second as you make eye contact and just give him a passive thumbs up. He walks away. Eyes now back in front. They expand as you subconsciously know what’s coming. Your hearing dials in and begins to muffle out what anyone else is saying. You’re having second thoughts about this ride. Too late. You’re strapped in. Time begins to slow. You attempt to take a deep breath. Nope. You instantly feel your back get jammed into your seat as you accelerate. “Tongue swipes now?” you think as you feel a sense of warmth in that fleeting moment.
+
+🚀",las6s7,<praw.models.comment_forest.CommentForest object at 0x0E1C1088>
+63,2021-02-02 12:18:01.608371,Danielb129,German line still holding,,las6lp,<praw.models.comment_forest.CommentForest object at 0x0E1C13E8>
+64,2021-02-02 12:18:01.944488,Otherwise-Ad3956,HOLD GME FROM S.KOREA,,las5ys,<praw.models.comment_forest.CommentForest object at 0x0E1C1310>
+65,2021-02-02 12:18:02.246469,shortgamegolfer,Dear Kingtard,"Dear Facebook,
+You know what you could really use? A retail store. A safe place where people can go to transact Marketplace business in person, or get a t-shirt made of their favorite photo of the dog humping their leg. A place that maybe used to sell amusements to local neckbeards, but fell on hard times. Then maybe you saw an opportunity to buy up all the shares of it, and maybe somehow you got a monstrous donation from a hedge fund to make it all essentially free. Not sure how that would happen, and I know this idea may sound retarded, but you are already lead by the reigning king of all autists, with his Nero haircut and emotionless, porcelain face, just like a big doll my aunt will come and sell to some other aunt at your new retail store. While there, they’ll show each other baby photos on an experience wall and become lifelong friends. “Oh here’s a nice photo of my loser, video game addicted nephew taking a bong rip. Oh you have one too? Let’s sit down in the coffee corner and talk more.” You guys recently mentioned seeing Apple as your biggest competitor. Maybe find someone who already has stores in the same area. 
+
+I’m not telling you how to run your business, but you need to add this kind of service, and maybe if would be easier to buy out an existing retailer than to build from scratch. I have no suggestion on who it would be... can’t think of anyone right now. Also, please don’t take this as financial advice, for it is not. I’m just spitballing here, tard to tard.",las5lk,<praw.models.comment_forest.CommentForest object at 0x0E1C1B20>
+66,2021-02-02 12:18:02.459505,OL3G_6969,"“Come on and make it, uh__ Hurt so good Come on baby, make it hurt so good Sometimes love don't feel like it should You make it hurt so good” - John Mellencamp 🤙🏼👐💎💎💎 literally my life’s savings don’t give a duck cuz I’m young and hongry.",,las3zx,<praw.models.comment_forest.CommentForest object at 0x0E1C1DC0>
+67,2021-02-02 12:18:02.719903,1Z99_Twitch,IM HOLDING MY $GME .. :),,las3l5,<praw.models.comment_forest.CommentForest object at 0x0E1C1F58>
+68,2021-02-02 12:18:03.030811,yomamalikesmydong,"I’m folding I’m sorry apes, but I need to walk away from not just GME but the market as a whole",,las3k9,<praw.models.comment_forest.CommentForest object at 0x0E1CB850>
+69,2021-02-02 12:18:03.589645,Technical_Challenge,Andrew Left at Shitron was the Canary in the Coal Mine,"I think the big announcement by Andrew Left at Citron / Shitron that he didn’t want to be part of this short selling shit after 20 years anymore, in hindsight was telling about what was about to happen. 
+
+He knew the level of criminality and market manipulation that was about to unfold - and he wanted no part in it. 
+
+He’s already been banned from the Hong Kong exchange for white collar criminal behaviour
+
+https://www.reuters.com/article/us-hongkong-court-citron-idUSKCN1QF1P0
+
+The dude knew what was about to go down to try and kill off the momentum of this GME story - and didn’t want to be associated with it or face any consequences if the SEC or other white collar criminal investigation authorities got involved. 
+
+PS: SEC - do your fucking job.",las2jz,<praw.models.comment_forest.CommentForest object at 0x0E1CB208>
+70,2021-02-02 12:18:03.830305,ElRanchitoBandito,Never again will I follow you idiots...,,las2bf,<praw.models.comment_forest.CommentForest object at 0x0E1D5D48>
+71,2021-02-02 12:18:04.281246,brederic,"Late to the party but not too late for the fun. Power to the Players, GME!",,las1km,<praw.models.comment_forest.CommentForest object at 0x0E1DD4C0>
+72,2021-02-02 12:18:04.525449,FredZockt,Retards stick together. Greetings from Germany 💎 🙌,,larzco,<praw.models.comment_forest.CommentForest object at 0x0E1DD670>
+73,2021-02-02 12:18:04.840283,Skystrike12,"Jesus fucking christ man. A boy among tards, $2.5mil+",,larz5h,<praw.models.comment_forest.CommentForest object at 0x0E1EA388>
+74,2021-02-02 12:18:05.217052,BuddyGuyBruh,Going against the grain and looking at possible exits for GME in the worst case,"This is probably going to get downvoted to oblivion but after being very bullish last Thursday I have **changed** my opinion over the weekend and yesterday.
+
+&#x200B;
+
+It seems a lot of people here are emotional and are just in it to stick to wallstreet. 
+
+Personally, I am not part of wallstreetbets to stick it to anyone or to make myself be a martyr for any cause. I am in it to make money. While I personally support a lot of views here and the blatant bs that is happening in form of **market manipulation**, brokers like RH having issues with their **clearing houses** (or so they claim) and **restricting trading**, **media**, and a bunch of other infuriating factors makes me pissed too. 
+
+However, hijacking the sub just for GME and not burying all other DD is just dumb. 
+
+&#x200B;
+
+**But the moment you start investing with your emotions you lose.**
+
+At the moment I feel extremely blind since I do not know what is real and what is manufactured info and we do not know the real short interest. **That plus all these emotions from people here is** making me uneasy.
+
+&#x200B;
+
+# I am trying to look for a potential exit.
+
+Based on the short interest reported being so low, it seems a lot of shorts have covered their positions (this could be manipulated data but we have to go on what we have). It seems they did most of their covering AH and during retail sell-offs that they artificially created by manipulating the price in AH.
+
+&#x200B;
+
+# Retail vs Institution change in the charts:
+
+It does seem that most of retail has gotten in on Monday and Tuesday and that after that it was institutions playing their games. You can see this by how radically different the graphs look for days after Tuesday of last week.
+
+&#x200B;
+
+[Volume and the movement of price is completely different after Wednesday  which makes me think it is institutions and other hedge funds that got it to trade volatility, notice the massive price gaps AH ](https://preview.redd.it/evdnw7xd71f61.png?width=1545&format=png&auto=webp&s=5594df708bbf563cc18f4e1ddf06d53139fdb54d)
+
+&#x200B;
+
+This with the addition of restriction of retail buyers is making me bearish because I believe that the shorts managed to get out during this time and the new shorts got in while the older ones blew up earlier and have covered during AH.
+
+&#x200B;
+
+# Supports to avoid shakeouts:
+
+It seems that the last support level around $160 range if broken is what would trigger me to sell. There was one wick that went as low as $110 on the 28th, this is a problem because during the free fall of the breakers it broke through the $160 support like nothing yet recovered. Setting a stop loss at $160 could cause your position to just be shaken out. But setting your stop loss at $110 or below is too low imo but could be a reasonable stop loss to prevent getting shaken out of your position if you believe the short squeeze is still coming.
+
+&#x200B;
+
+[Trying to avoid getting shaken out at $110, this was probably their test to see how low they can flash crash the price to pick up as many shares if they were to cover their shorts.](https://preview.redd.it/bxtxqa4n71f61.png?width=1543&format=png&auto=webp&s=567bd77db52fe4b7a2bc4b5664664f36944d1e7f)
+
+&#x200B;
+
+# Comparison with VW in 2008
+
+The balancing act here is finding the sweet spot where you will not get shaken out in case the data is manipulated and the squeeze rockets to $1000+/share but also not to be low enough that your losses are massive.
+
+&#x200B;
+
+[You want to avoid selling here and not get shaken out \( I believe that would be $110 for GME\)](https://preview.redd.it/my0icm4s71f61.png?width=611&format=png&auto=webp&s=5772850ff659033abbc5e03a3c2bff38976c5e54)
+
+&#x200B;
+
+If you are more conservative I would take the profits around 160, if you want to potentially wait for squeeze and not get shaken out $110 seems like a reasonable stop loss.
+
+Depending on the pre-market sentiment by morning I will be looking to either get out at 160 or holding.
+
+&#x200B;
+
+I am not trying to scare anyone just trying to do my own exit strategy, Do your own research. I do not have a crystal ball. After the official short interest is released I may look to reenter the position in GME if I get out, but profit is profit till then.
+
+&#x200B;
+
+# TLDR:
+
+* If we are above $160 ------->  💎 👐  🚀  🚀  🚀  🚀 
+* If we are inbetween $110 - $160 ---->  🌈🐻 
+* If we are below $110 ------>  🧻✋",larxmg,<praw.models.comment_forest.CommentForest object at 0x0E1EAD60>
+75,2021-02-02 12:18:05.609173,thispersonedits,My teenage son has joined the GameStop gold rush. How worried should I be? | GameStop,,larxfb,<praw.models.comment_forest.CommentForest object at 0x0E1F1478>
+76,2021-02-02 12:18:06.003050,KeckyOK,"🇨🇦 Canadians! WealthSimple Trade has a 3 day new user cooldown, but;","Canadians have this option,
+
+unlimited trade, no fees, taxation calculated, so - 🇨🇦 Canadians, you can use WealthSimple to join in, but it takes 3 days to 'settle' your first transfer from your bank account so you can start trading. It uses an app, but if you have a PC (no iPhone, Android) ...
+
+\--🇨🇦 for PC USERS : install **BlueStacks Android emulator**, download the WealthSimple app to unlock **Add Funds.**",larvtv,<praw.models.comment_forest.CommentForest object at 0x0E1F12B0>
+77,2021-02-02 12:18:06.241601,ThatGuyOnTheReddits,💎 $GME 💎 Options Delivery Tracking Thread. Were Your Shares Delivered Today?...,"I want to start a thread before the market opens, where we can track the options that members executed on Friday.
+
+We need to be tracking how many shares from these options are delivered today, and how many people that EXECUTED (not let them expire) their calls get their shares today. 
+
+It would help keep a somewhat accurate count of the shares taken off the market on Friday with option calls by members here. It would also help us get ahead of the Failure To Deliver numbers.
+
+I'm anticipating some delivery fuckery.
+
+Steel your resolve for the week. We ride to our destiny...
+
+🦍❤🍌💎👊🚀🌝",larvp8,<praw.models.comment_forest.CommentForest object at 0x0E1F19D0>
+78,2021-02-02 12:18:06.488095,jny98789,"One more retarded from germany standing with you guys. Not much, but best i can do. 💎🙌 until the end",,larvlv,<praw.models.comment_forest.CommentForest object at 0x0E1F12C8>
+79,2021-02-02 12:18:06.789800,GUCCI_Q,Don’t forget about us! Australians are being hit heavily by restrictions! Take a look.,"Hey guys, you should be aware of our current restrictions so I’m here to make sure you are!
+
+Stake (Australia’s version of Robinhood) have have suspended the buying of GME, AMC & NOK. [See here ](https://imgur.com/a/tmqNQyn)
+
+Etoro (2nd most popular trading app) have Set automatic stop losses without any warnings.
+
+You guys need to know these are pretty much the only once reputable apps available to us. 
+
+There is so many people that have just transferred funds to these apps not knowing what was yet to come. 
+
+Expect red days to come as we move to new platforms Hold for ur dear life because it’s going to be a wild ride - Aussies
+
+Ps. Don’t delete mods -
+
+Positions: Whopping 3 shares of GME @ $60!",larv9k,<praw.models.comment_forest.CommentForest object at 0x0E1F2808>
+80,2021-02-02 12:18:07.502082,LostAK,We won't actually know how much GME is still shorted until the 9TH OF FEBRUARY,"Short interest position is reported to FINRA twice per month and DOESN'T NECESSARILY CORRELATE with daily short volume. They are two different metrics that both have *short* in the name and I feel I've seen a few posts that are intentionally conflating the two to try and confuse people.
+
+A decent explanation is here [OTC Markets BLOG](https://blog.otcmarkets.com/2018/11/13/understanding-short-sale-activity/)
+
+FINRA Reporting schedule is [here](https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest)
+
+All these people saying that the squeeze has or hasn't happened are talking out their ass unless they're privy to some insider information, which newsflash they probably are fucking not. I'm holding until I know for sure. I'm confident I'll be dabbing billionaire tears with my 💎🙌 held handkerchief but I'm also prepared to make an exit strategy come February 9th if the Short Interest ratio has somehow dropped to nothing.
+
+In other news, if you're wondering what a good common sense askance from ~~your corrupt as fuck federal agency~~ the SEC to keep something like this from happening again, require more regular reporting of short sale positions. BiWeekly is a joke intended to keep the process as opaque as possible.
+
+30 GME @ 210, 35 GME @ 316",larv28,<praw.models.comment_forest.CommentForest object at 0x0E1F2FB8>
+81,2021-02-02 12:18:07.937366,TCKCOG,Here's yesterday's loss porn from Korea. Enjoy. - Hold?,,laruww,<praw.models.comment_forest.CommentForest object at 0x0E666550>
+82,2021-02-02 12:18:08.366051,LXthunder,Red is just a color. Be patient. Stay strong 💎 ✋,,lars5l,<praw.models.comment_forest.CommentForest object at 0x0E6669E8>
+83,2021-02-02 12:18:08.719560,gyameli,Some loss porn for yall from Germany but if I had more cash I'd buy the dip. Gme to the moon 🚀🚀🚀🚀,,lars3z,<praw.models.comment_forest.CommentForest object at 0x0E666958>
+84,2021-02-02 12:18:08.995679,watchmaking,Can we please stop downvoting everything that isn't GME?,"I know the squeeze is historic and important, but I'm legitimately tired of seeing nothing else but GME on this subreddit. I know some of you are new and excited for this ""once in a lifetime opportunity"" and I respect that, but there are still many other great companies to invest in and we have some very autistic people ready to provide some delicious DD for us to YOLO with. I'm not talking about meme stock DD but legitimate, quality DD on real companies with real value like for example AMD, NVIDIA, AMZN etc. Please stop using this sub as your personal GME echo chamber!",lars2w,<praw.models.comment_forest.CommentForest object at 0x0E666A18>
+85,2021-02-02 12:18:09.231295,BadassMcGass,How I view DFV when he posts his YOLO update,,larrch,<praw.models.comment_forest.CommentForest object at 0x0E66F790>
+86,2021-02-02 12:18:09.552351,kingkierite,GME holders - Why you should know what confirmation bias is.,"We are all human. When making trades it is very important to be aware of your emotions. You don't need to become emotionless but moreso conscious of how you react and behave.
+
+Confirmation bias is the tendency to only take on information/opinions that agree with what you believe is (or will be) the case. This emotional bias is highly elevated when the issue is self relevant i.e. if you hold GME and think it will go to the moon, you will read more posts that agree with what you want to be true and toss others to the side, maybe even put them down.
+
+This is bad.
+
+Contrary to popular belief, you can't just manifest a trade or price increase. For example, price goes up and you think it's a good time to sell. You check Reddit and some ape says ""GME will hit 1000 EOD 🚀🚀🚀"" and this makes you hold on a little longer. Pure greed. Other people being allowed to change your opinion on a good trade is poor on your behalf. 
+
+Read what you want to read, trade how you want to trade. Just be aware of how you react and behave with skin in the game.
+
+TL;DR 
+If you want GME to go to the moon, you're more than likely only reading comments that say ""GME to the moon"" and everyone else's opinion doesn't matter.
+
+Obligatory: 
+GME to the moon 🚀🚀🚀 squeeze hasn't squozen",larr4h,<praw.models.comment_forest.CommentForest object at 0x0E681D48>
+87,2021-02-02 12:18:10.257946,TrackLabs,"After half a week of failed attempts to find brokers and transfer money, I finally joined! Sadly could only afford 1 GME cause of the dip, but here I finally am!",,larpek,<praw.models.comment_forest.CommentForest object at 0x0E6808C8>
+88,2021-02-02 12:18:10.630046,CompleteBrat,A brief history of Melvin Capitals & Point72s founding,"**BE CAREFUL - LOTS OF WORDS**
+
+I love the different forms of DD we had in the past couple of weeks. Most of them were very technical and I personally found a more and more increasing interest in the people we love to hate. 
+
+I spend the past couple of hours trying to understand what happened in a time where most of us were busy getting to the new level cap of Lich King whilst boomers managed to fuck up the economy. Yes. I’m talking about 2008.
+
+You see, Melvin Capitals story begins under the wings of Steve Cohens S.A.C. Capital. US Attorney Preet Bharara described them as following in 2013: 
+
+*  “culture of corporate corruption”
+*  “institutional indifference to unlawful conduct \[that\] resulted in insider trading that was substantial, pervasive, and on a scale without known precedent in the hedge-fund industry.”
+*  “a veritable magnet of market cheaters”
+
+If that isn't off to a great start, right? To understand the story I'm about to tell you, here a short summary of how SAC was structured: 
+
+„SAC was structured like a bicycle wheel, with the spokes consisting of about 100 portfolio managers with their own teams of analysts and traders working in competition with the other teams. Camaraderie in SAC’s offices was low. At the center was Cohen, 57, the only connector between the different groups, who would take the best ideas from each and trade on them himself. Aside from losing money, there was nothing Cohen hated more than a portfolio manager who didn’t communicate vigorously and often.“
+
+In 2008 two employees were charged with insider trading. One of them was Mather Martoma who was involved in insider trading with a new Alzheimer drug that first showed positive and then negative results which helped Cohen get out at a perfect time and thus avoided a $275million loss. 
+
+The other was Jon Horvath, he claimed that his asshole boss Steinberg told him get insider information to get better trades or else he would be fired. So he did with DELL and also passed this information to Steinberg. With this insider information he found out DELL was going to have a bad quarter and built up a massive short position only to find out that his even BIGGER ASSHOLE BOSS COHEN was long DELL. And FUCK was he scared of Cohen, the ragey ass went on a rampage whenever he lost money so he mailed Steinberg to tell him about his concerns. Now it get’s interesting. Steinberg told Cohen and Cohen told Steinberg to figure out who the fuck was right. Jon or the person suggesting him this trade – Gabriel fucking Plotkin. You may be asking “Who dis?“ -it's **Melvin Capitals later fucking founder**. After some back and forth Plotkin realized Jon had the better source and confirmed to sell the long position. After its earnings announement DELL dropped 14%. Good job Jon. 
+
+Later that evening, Cohen sent Steinberg a message that read: “Nice job on dell.” Steinberg’s response was, “Thanks… this ole dog can still hunt”.
+
+This happened again. This time Steinberg/Jon being long, Cohen short. Here a chat: 
+
+>AIM:mike72ms \[Steinberg\] dell rpts thrusday  
+AIM:cas— \[Cohen\] y …   
+AIM:mike72ms **we like it**…weve been good here if u remember  
+AIM:cas— call me… it’s a shame-cause I can be helpful to you too but that;s life  
+AIM:mike72ms steve I have an analyst that covers this stock… he has industry contacts… im not hiding anything from u
+
+Cohen replied: “I would prefer to talkon phone”.
+
+I decided to leave in the chat because both sound like fucking retards and Cohen like a salty 9 year old. Truely, no different to us
+
+Martoma, the guy with the Alzheimer drug was convicted to a 9 year prison sentence. 
+
+Jon decided to work with prosecutors to try help fuck over Steinberg but in 2015 the case was abandoned. 
+
+In 2011 Plotkin was apparently investigated for trading Weight Watchers based on insider information. An SAC spokesperson denied this claim however by saying „Gabe Plotkin has built a successful career on a commitment to sound fundamental research“
+
+In 2013 SAC pleaded guilty to an insider trading charge, paid an $1.8 billion penalty and changed its name to Point72 Asset Management. Cohen shrunk the companies size and said goodbye to many of his portfolio managers. 
+
+In 2013 the SEC also charged Steve Cohen with a „failing to supervise“ civil charge in regards to Martoma with the goal to give Cohen a lifetime ban from supervising funds that manage outside money. In the end they settled for a two year ban which I guess is almost the same thing. It is rumoured that Plotkin is the mysterious „Portfolio Manager A“ in this charge
+
+In 2014-2015 Cohen took steps to „increase compliance and oversight” at Point72. He hired former F.B.I agents and federal prosecutors. For example Kevin J. O’Connor and Vincent Tortorella. Some saw this as an effort to “gain the confidence of regulators and permit him to again manage money for outside investors.“
+
+In 2014 Gabriel Plotkin, „one of Cohens most successful traders” founded Melvin Capital. Cohen backed him with a small loan of 200 milion dollars.
+
+In a memo sent to more than 800 employees of Point72, Mr. Cohen said that after SAC pleaded guilty, he “vowed that what happened to SAC would never happen to Point72.” The settlement “is not and cannot — be a reason to become complacent,” Mr. Cohen wrote, adding that the firm would become a leader in compliance.
+
+Fact is, the SEC spent almost a decade trying to get dirt on Steve Cohen and failed. Plotkin got a slap on the wrist by being hinted at in the civil charge against Cohen and Steinbergs case was dropped. But hey, the **analyst** who forwarded insider information in 2008 about an alzheimer drug will be freed from prison soon after 9 years in jail. I know insider trading is irrelevant to the current situation however I found the story interesting because it shows by what rules they play and what type of people they are. 
+
+TL;DR: The people behind Melvin and friends are frauds and cheaters. They never played by the rules, never will. SEC knows this but literally can't do anything.
+
+everything is allegedly, i dont know anything, there are probably mistakes in this story, im no lawyer, no financial advice, no suicidal tendencies, have a rocket  🚀",larp1a,<praw.models.comment_forest.CommentForest object at 0x0E680AA8>
+89,2021-02-02 12:18:11.338154,YoloGME,My broker is clearly retarded and can’t update the price,,larnmq,<praw.models.comment_forest.CommentForest object at 0x0E680D48>
+90,2021-02-02 12:18:11.963331,Cacti_Pie,"It's happening in Australia now. STAKE is pulling a Robinhood and not allowing buys in $GME, $AMC & $NOK!!",,larmtn,<praw.models.comment_forest.CommentForest object at 0x0E68CB80>
+91,2021-02-02 12:18:12.702086,oldDotredditisbetter,"GME vs wallstreet explained (2021), 100% accurate",,larm2u,<praw.models.comment_forest.CommentForest object at 0x0E698058>
+92,2021-02-02 12:18:12.969424,Geko2012,Connecting the dots GME ladder attack monkey brain style.," 
+
+Today (2/1) didn't go as many expected.
+
+Some expected things to get uglier for obvious reasons. Last week was bad but at the end of it it seemed as an overwhelming success for everyone who is rooting for GME.
+
+Tendies were expected today... didnt happen.
+
+So what did happened? My monkey brain was trying to comprehend the events and occurrences.
+
+One thing that was noted by fellow monkey brain was how chunks of 100 shares have been traded back and forth in rapid succession.  
+People soon attributed this to the short sellers running a ladder attack to drive the price down to bring retail investors to sell their shares so shorties can gobble them up and cover.
+
+This tactic had been used last week too so it came to no surprise.
+
+Now apparently news media is reporting that shorts have been covered from a 120 something% down to 39%. How is that even possible when GME ended so strong last week.
+
+Naturally there should follow a huge price spike if that was the case.
+
+My monkey brain keeps thinking back to those chunks of 100 shares traded. I watched it last week and i did today.
+
+Now things seemed to get really heated last Thursday 01/28, some say the squeeze was about to happen that day and that's when the ladder attack hit. Thats when market manipulation was so obvious it was in EVERYONES face. Restricting sales of shares getting the media involved and so on and so forth
+
+In chunks of 100,
+
+One contract of a call or put is for the right but not the obligation to exercise 100 shares.
+
+Ok fine...So... what does that mean.... monkey brain tired no understand big numbers.
+
+Some have noticed that the fail to deliver securities data shows a significant amount of GME stock not being able to cover, however the data is not up to date. We are lagging behind by a little
+
+Going back to the trade restrictions for GME, many platforms have limited the purchase of GME stock
+
+Over the last couple of days i have been reading one broker being mentioned over and over....  
+Who is that ? Fidelity it just so happens that fidelity is one of the major stock holders of GME is that coincidence ? There are others but there is no need to go into detail.
+
+After RobbinHood placed the restriction the price action went down but the shorties have been still trading, how? Where are they getting their shares from?
+
+Are there even shares left ? THAT IS THE BIG QUESTION
+
+Its a mess and to make a long story short i believe but do not know for certain that the short ladder attack is actually a form to cover shorties shorts temporarily just like writing checks back and forth to banks.
+
+I am sorry guys i tried my best here... a lot has happened today and the last 7 days.  
+To make it clear i am a retard using his limited brain cells which are decaying rapidly every hour to make some sense of this myself. In no form or way should this affect your decision in buying or selling GME stock. I dont know what i am talking about.
+
+It hurts to lose money but it truly hurts more to lose a dream.",larm8s,<praw.models.comment_forest.CommentForest object at 0x0E698868>
+93,2021-02-02 12:18:13.274576,Exbozz,And here is the reason why silver will never squeeze to a fair value by buying paper silver.,,larm41,<praw.models.comment_forest.CommentForest object at 0x0E698EF8>
+94,2021-02-02 12:18:13.531840,Salted_Liquorice,DD,"Buy orders still significantly outpacing sell orders, and short shares at 88.58% with 226.42% of the float.
+
+Dip is manufactured  149,957 buys to  38,590 sells
+
+[https://financhill.com/most-heavily-shorted-stocks-today?fbclid=IwAR2tzlh-LoK6ikdeEee1cWpb3YkUvnLZo7lYqGRIAncKVdJCnS8r0CFwU28](https://financhill.com/most-heavily-shorted-stocks-today?fbclid=IwAR2tzlh-LoK6ikdeEee1cWpb3YkUvnLZo7lYqGRIAncKVdJCnS8r0CFwU28)
+
+[https://eresearch.fidelity.com/eresearch/gotoBL/fidelityTopOrders.jhtml?fbclid=IwAR175Epo-wUjLixuKL8XJ-mI-gtffQ9-LSRq5W0Dy-rSmIzZVCw2lYSvQCY](https://eresearch.fidelity.com/eresearch/gotoBL/fidelityTopOrders.jhtml?fbclid=IwAR175Epo-wUjLixuKL8XJ-mI-gtffQ9-LSRq5W0Dy-rSmIzZVCw2lYSvQCY)
+
+&#x200B;
+
+They cannot cover their shorts until the price falls through the floor, and if they do it would push the price up if they did it in any meaningful volume.
+
+&#x200B;
+
+I am not a financial advisor this is my opinion.",larkiy,<praw.models.comment_forest.CommentForest object at 0x0E6A0538>
+95,2021-02-02 12:18:13.891618,Syanth,BP Shows Big Oil Is Still Suffering With Earnings Miss,,larjmu,<praw.models.comment_forest.CommentForest object at 0x0E6A0A60>
+96,2021-02-02 12:18:14.127515,aiyahhhhhh,Seemed like there was skepticism that anyone would yolo into 2-5 800c// Well I am retarded enough 💎✊,,lariy9,<praw.models.comment_forest.CommentForest object at 0x0E6A0F28>
+97,2021-02-02 12:18:14.424668,Chameleon57,"For the people considering selling, read this!","I know things are looking rough just now, and if you are new to trading that you might be looking at cutting your losses and moving on.  Now, I am as much a noob as most of us here, but I decided to go and try to educate myself on what has been going on with GME, to see if there was any chance of the price reversing and going back up. 
+
+I’ve been seeing quite a few folk post about how the trading volume is low, but I never really understood what that means, so a quick Google search lead me to this:  https://finance.zacks.com/volume-mean-trading-stocks-2570.html
+
+It’s making me believe that it’s just the HF’s forcing the price down and that there could still be a price reversal later on. How much later? I have no idea, but I believe that there is potential one coming. 
+
+I also could be completely wrong and am just being an eternal optimist, but until I’m proven otherwise I am going to keep holding!
+
+EDIT: emojis for the lols! 💎🙌💎🙌💎🙌🚀🚀🚀🚀🚀",lariol,<praw.models.comment_forest.CommentForest object at 0x0E6BB268>
+98,2021-02-02 12:18:15.259791,Mason-Derulo,Be prepared to see your portfolio deep in the red for a few weeks,"I know this GME nonsense seems to be getting longer each day as hedgies scramble to buy themselves more time. If you haven’t read the great DD written about failure to deliver, I’d encourage you to do so ASAP:
+
+https://www.reddit.com/user/bcRIPster/comments/labq6u/follow_the_crumbs_gme_exposed_the_meta/?utm_source=share&amp;utm_medium=ios_app&amp;utm_name=iossmf
+
+https://www.reddit.com/r/wallstreetbets/comments/lalucf/i_suspect_the_hedgies_are_illegally_covering/?utm_source=share&amp;utm_medium=ios_app&amp;utm_name=iossmf
+
+Once you’ve read and understand that, understand something else. We’re going to be holding until the end of February. No questions asked at this point. We’ll see the regular tricks we’ve been seeing everyday to drive the price down, ladder attacks, misinformation campaigns, bots, etc. for 3-4 more weeks. Who knows how long we’ll have restricted buying on certain brokerages, probably for a while. The important thing to do is TRUST THE PROCESS and spread awareness of what’s going on, get it trending on Twitter, tell your parents, tell your wife’s boyfriend if he can stand to listen to you rattle on about your shitty meme portfolio for a few more seconds. If we KEEP HOLDING this will all work itself out eventually, the hedgies will have to answer to us. But that probably won’t be tomorrow or next week, it’ll be the end of this month. We could see more days where we lose 30% while nobody sells, be ready. And if you trust in your fellow retards, stock up on the discounts and prepare for the shit storm at the end of February. I’ll be buying any dips under $100. I encourage you to set a price and consider doing the same, although this is not financial advice, I’m retarded just like you. 
+
+Position: 43 shares GME at $100.30 
+
+🚀🚀🚀🚀💎🙌🏻💎🙌🏻💎🙌🏻",lari52,<praw.models.comment_forest.CommentForest object at 0x0E6CB028>
+99,2021-02-02 12:18:15.868796,ASoftEngStudent,DDDD - Is GME being Illegally Naked Short Sold?,"This will be a quick DDDD (Data-Driven DD) because it's late and pretty much every WSB post today has been about it. To catch up, [read this post that inspired by investigation](https://www.reddit.com/r/wallstreetbets/comments/lak773/why_were_still_winning_and_why_were_still_going/) and this post that I this does a very good job explaining [the theory](https://www.reddit.com/user/bcRIPster/comments/labq6u/follow_the_crumbs_gme_exposed_the_meta/). Basically, a lot of people here believe that institutions have been naked short selling GME, effectively creating fake or ""counterfeit"" GME stock, and it's there's some systematic fraud going on.
+
+Much of the discussion has been centered around the [Failure to Deliver data released](https://www.sec.gov/data/foiadocsfailsdatahtm) by the SEC for the first half of Jan. A Failure to Deliver is reported when a broker is unable to deliver a share that they have sold to the clearing house by the settlement date (2 days after the transaction); [see my DDDD discussing what how this all works if you're curious](https://www.reddit.com/r/wallstreetbets/comments/l9sh9e/dddd_why_gme_might_next_week_and_how_it_could/). This can happen for many reason, and in the [examples given by the SEC](https://www.sec.gov/investor/pubs/regsho.htm) includes delays if people are physically delivering share certificates for some reason, and market makers (eg. Citadel) legally selling shares to a buyer without an actual seller (i.e. naked short sale) to provide liquidity; they just need to make sure they're able to later source that share quickly after it. Looks like the theory floating around r/wallstreetbets today is that non-market makers are illegally naked short selling GME, which is the topic of investigation for today.
+
+One thing I've noticed that's been missing from many of these discussions is a proper analysis of the SEC-provided data on the Failure to Deliver numbers, so I decided to add this to help y'all make some informed decisions.
+
+*Disclaimer - This is not financial advice, and a lot of the content below is my personal opinion and for ENTERTAINMENT PURPOSES ONLY. In fact, the numbers, facts, or explanations presented below could be wrong and be made up and with some satire thrown in. Don't buy random options because some person on the internet says so. Do your own research and come to your own conclusions on what you should do with your own money, and how levered you want to be based on your personal risk tolerance.*
+
+**Methodology**
+
+I'm going to analyze this data using a script to look at a rough transactional value and approximate percentage of volume that the failure-to-deliver shares represent. Now, **these are all rough and kind of inaccurate especially for low-volume tickers** because the SEC data is based on the total number of outstanding failure-to-deliver shares for a particular settlement date. This means that
+
+1) Since you can have the same share being failed to deliver multiple days in a row, shares in these situations will be counted multiple times in all the data shown below.
+
+2) The earliest possible date shares in a trade can be counted as failed to be delivered is 3 trading days after the transaction occurred, so **literally none of the failure-to-deliver shares represents that day's volume**. However, I'm going to make an assumption that a day's volume will be in the same ball park as the volume from 3 days ago, so it should give a rough estimate. There are quite a few cases, especially with small-caps, where this is clearly not the case, and you will see many cases with a 100+% failure to deliver / volume results for this reason.
+
+3) The dollar value itself is wrong because it's using the price at settlement date, not the transaction date
+
+However, with these caveats, the purpose is to compare GME with other stocks to see if anything stands out using these metrics, using things like dollar value and volume rather than the raw number of shares to normalize the data.
+
+**The Code**
+
+    from collections import defaultdict
+    import time
+    import requests
+    POLYGON_API_KEY = '<ADD YOUR API KEY HERE>'
+    VOLUME_DATA_API_URL = 'https://api.polygon.io/v1/open-close/{}/2021-01-{}?unadjusted=true&apiKey=' + POLYGON_API_KEY
+    
+    # Reads data
+    dates_to_stocks = defaultdict(lambda: defaultdict(float))
+    f = open('fail_to_delivers.txt', 'r') # https://www.sec.gov/data/foiadocsfailsdatahtm
+    for line in f:
+        parts = line.split('|');
+        date = parts[0]
+        ticker = parts[2]
+        try:
+            fails = int(parts[3])
+            price = float(parts[5])
+            value_of_fails = price * fails
+            dates_to_stocks[date][ticker] = value_of_fails
+        except ValueError:
+            # fails or price was not a number; probably not traded (eg.'.')
+            pass
+    
+    for date, stocks in dates_to_stocks.items():
+        day = int(date[-2:])
+        print('Data for Jan {}'.format(day))
+        sorted_stocks = sorted(stocks.items(), key = lambda stock: stock[1])
+        sorted_stocks = filter(lambda stock: stock[1] > 10000000, sorted_stocks)
+        for ticker, val_of_fails in sorted_stocks:
+            req = requests.get(url=VOLUME_DATA_API_URL.format(ticker, str(day).zfill(2)))
+            res = req.json()
+            if res['status'] == 'NOT_FOUND':
+                print('No volume data for {}'.format(ticker))
+                continue
+            else:
+                try:
+                    volume = res['volume']
+                except KeyError:
+                    print(res)
+            val_of_fails_in_mill = int(val_of_fails / 1000000)
+            pct_vol = val_of_fails / volume
+            print('{: <6} ${: <5} {:.2f}% of vol'.format(ticker, str(val_of_fails_in_mill) + 'M', pct_vol))
+
+Here's some code I hacked together myself. If anyone sees a bug please let me know and I'll re-calculate all this data, but otherwise you can try this yourself at home to crunch the data yourself after getting a Polygon API key, although you might need additional code to slow down the API requests since the free plan has a rate limit.
+
+If everything above sounded gibberish to you, this code basically does all the calculations I mentioned above by reading the SEC data where the dollar value > 10M and pulling volume for the day from a third party source.
+
+**The Results**
+
+    Data for Jan 4
+    RMO    $10M   0.96% of vol
+    MP     $10M   1.81% of vol
+    FTSL   $10M   23.44% of vol
+    TLT    $11M   0.86% of vol
+    IFF    $11M   2.27% of vol
+    WISH   $11M   2.00% of vol
+    FXH    $12M   85.98% of vol
+    BIL    $13M   8.09% of vol
+    BAR    $13M   17.02% of vol
+    SCHV   $17M   30.23% of vol
+    SFIX   $17M   5.46% of vol
+    HEI    $18M   41.81% of vol
+    GP     $18M   9.58% of vol
+    No volume data for IDEXY
+    SPY    $34M   0.31% of vol
+    BABA   $34M   1.37% of vol
+    BLNK   $54M   4.38% of vol
+    ZM     $55M   6.38% of vol
+    LMND   $79M   21.11% of vol
+    QS     $88M   1.03% of vol
+    FUBO   $179M  2.87% of vol
+    Data for Jan 5
+    SFIX   $10M   2.55% of vol
+    ICLN   $10M   0.99% of vol
+    SDC    $10M   2.76% of vol
+    EEM    $10M   0.20% of vol
+    BTAQ   $11M   13.55% of vol
+    AAPL   $12M   0.12% of vol
+    VV     $12M   53.71% of vol
+    IGV    $13M   18.33% of vol
+    XOP    $14M   0.88% of vol
+    SMH    $14M   6.05% of vol
+    PLTR   $15M   0.53% of vol
+    FUBO   $15M   0.21% of vol
+    IFF    $16M   2.98% of vol
+    BAR    $17M   24.29% of vol
+    SNAP   $17M   1.95% of vol
+    LAZR   $18M   2.64% of vol
+    VXF    $18M   41.30% of vol
+    HYG    $18M   0.55% of vol
+    SPY    $19M   0.29% of vol
+    BYND   $22M   9.42% of vol
+    ARKK   $22M   4.11% of vol
+    BLNK   $22M   2.59% of vol
+    No volume data for IDEXY
+    Z      $30M   11.06% of vol
+    BILI   $31M   3.23% of vol
+    BBIN   $42M   1227.08% of vol
+    SCHZ   $52M   60.67% of vol
+    TSLA   $56M   1.73% of vol
+    QS     $140M  2.48% of vol
+    Data for Jan 6
+    GP     $10M   7.34% of vol
+    Z      $10M   3.57% of vol
+    JDST   $10M   1.57% of vol
+    SPIB   $10M   4.83% of vol
+    ARKQ   $10M   7.38% of vol
+    TFJL   $10M   1986.44% of vol
+    BNGO   $11M   0.07% of vol
+    QQQM   $11M   23.90% of vol
+    ESGV   $11M   18.64% of vol
+    GOLD   $12M   0.40% of vol
+    SUSA   $12M   96.73% of vol
+    TAN    $13M   1.77% of vol
+    SCZ    $13M   4.71% of vol
+    GME    $13M   2.19% of vol
+    MSTB   $13M   367.44% of vol
+    TAL    $13M   3.52% of vol
+    DFAE   $13M   223.59% of vol
+    PHYS   $14M   4.62% of vol
+    IWB    $15M   13.07% of vol
+    KRE    $15M   0.89% of vol
+    IFF    $15M   2.83% of vol
+    SIL    $17M   18.08% of vol
+    PFF    $17M   1.74% of vol
+    UNH    $20M   3.02% of vol
+    LMND   $20M   8.95% of vol
+    XSD    $21M   91.72% of vol
+    LIT    $23M   5.71% of vol
+    SHOP   $25M   19.53% of vol
+    VXF    $26M   25.65% of vol
+    No volume data for IDEXY
+    QQQ    $30M   0.56% of vol
+    ANET   $31M   42.36% of vol
+    TWLO   $32M   17.50% of vol
+    IWO    $35M   46.89% of vol
+    ARKG   $38M   5.97% of vol
+    DIS    $39M   5.18% of vol
+    FUBO   $45M   1.21% of vol
+    JPM    $54M   2.17% of vol
+    AAL    $57M   0.88% of vol
+    MDY    $61M   26.59% of vol
+    VOO    $69M   14.32% of vol
+    CZA    $71M   7143.17% of vol
+    IGV    $87M   55.85% of vol
+    XBI    $120M  18.37% of vol
+    QS     $139M  1.99% of vol
+    IVV    $160M  36.73% of vol
+    Data for Jan 7
+    FPXI   $10M   36.14% of vol
+    ABCL   $10M   10.24% of vol
+    Z      $10M   3.23% of vol
+    TWLO   $10M   5.16% of vol
+    ZNGA   $10M   0.85% of vol
+    CHEK   $11M   0.47% of vol
+    CEO    $11M   21.13% of vol
+    ARKG   $11M   1.72% of vol
+    SFIX   $11M   5.76% of vol
+    MOO    $13M   30.06% of vol
+    JPM    $14M   0.64% of vol
+    GME    $14M   2.37% of vol
+    ESGV   $15M   46.55% of vol
+    SUSA   $16M   29.27% of vol
+    WMT    $16M   2.33% of vol
+    PFF    $16M   1.91% of vol
+    FEM    $18M   123.87% of vol
+    VTV    $18M   4.78% of vol
+    EMQQ   $18M   53.43% of vol
+    VIG    $18M   13.09% of vol
+    UNH    $19M   5.74% of vol
+    ABEV   $19M   0.68% of vol
+    JNK    $21M   2.87% of vol
+    ZM     $22M   3.98% of vol
+    No volume data for IDEXY
+    IWM    $25M   1.05% of vol
+    TDOC   $27M   4.54% of vol
+    XLV    $31M   2.53% of vol
+    AMAT   $31M   3.55% of vol
+    ANET   $32M   36.03% of vol
+    AAPL   $34M   0.31% of vol
+    IBB    $35M   12.86% of vol
+    SCZ    $35M   14.69% of vol
+    TAL    $39M   7.94% of vol
+    LIT    $39M   14.64% of vol
+    SLYV   $42M   54.15% of vol
+    MDYG   $43M   118.88% of vol
+    MSFT   $44M   1.59% of vol
+    XBI    $49M   11.22% of vol
+    QS     $53M   1.38% of vol
+    IGV    $65M   59.00% of vol
+    IWO    $75M   138.97% of vol
+    SPY    $82M   1.20% of vol
+    FUBO   $85M   3.25% of vol
+    MDY    $92M   86.83% of vol
+    LMND   $131M  19.19% of vol
+    No volume data for CRUU
+    QQQ    $262M  8.48% of vol
+    Data for Jan 8
+    GME    $10M   1.54% of vol
+    SAM    $10M   157.14% of vol
+    HSBC   $10M   4.79% of vol
+    TWLO   $10M   4.70% of vol
+    ZNGA   $10M   0.56% of vol
+    XSOE   $10M   8.19% of vol
+    Z      $10M   4.43% of vol
+    FNF    $11M   6.56% of vol
+    FXI    $11M   0.46% of vol
+    DXCM   $11M   9.21% of vol
+    IWO    $12M   31.85% of vol
+    BILL   $12M   7.37% of vol
+    BNGO   $12M   0.09% of vol
+    IAI    $12M   451.35% of vol
+    MEDP   $12M   67.77% of vol
+    EDOC   $12M   50.14% of vol
+    DRIV   $13M   6.18% of vol
+    MXIM   $14M   3.89% of vol
+    ANGL   $14M   12.28% of vol
+    FEMB   $14M   84.42% of vol
+    AAP    $15M   17.53% of vol
+    ORA    $17M   13.56% of vol
+    SFIX   $17M   5.60% of vol
+    ABEV   $17M   0.64% of vol
+    MJ     $18M   4.67% of vol
+    TBT    $19M   5.46% of vol
+    AKICU  $19M   123.18% of vol
+    BYND   $21M   4.86% of vol
+    SUB    $21M   99.26% of vol
+    LQD    $22M   1.69% of vol
+    No volume data for IDEXY
+    AMC    $23M   0.59% of vol
+    SNOW   $27M   3.00% of vol
+    ANET   $29M   26.26% of vol
+    XLB    $30M   3.58% of vol
+    TAL    $30M   6.70% of vol
+    VPL    $31M   40.50% of vol
+    CLOV   $33M   2.12% of vol
+    SCHE   $34M   5.49% of vol
+    IBB    $36M   8.21% of vol
+    BHP    $38M   13.79% of vol
+    QQQ    $42M   1.21% of vol
+    HHC    $43M   86.39% of vol
+    AZN    $44M   3.93% of vol
+    VTI    $45M   5.94% of vol
+    QS     $51M   1.98% of vol
+    FUBO   $52M   2.52% of vol
+    AMAT   $53M   5.78% of vol
+    VXF    $66M   183.81% of vol
+    JNK    $126M  16.26% of vol
+    IGV    $126M  214.86% of vol
+    ACWI   $129M  34.67% of vol
+    GNR    $167M  876.32% of vol
+    TAN    $177M  44.53% of vol
+    LMND   $181M  23.88% of vol
+    MDY    $260M  262.83% of vol
+    DVN    $342M  24.40% of vol
+    Data for Jan 11
+    VXX    $10M   0.24% of vol
+    LIT    $10M   5.28% of vol
+    BNGO   $10M   0.07% of vol
+    ZNGA   $10M   0.38% of vol
+    VSS    $10M   45.06% of vol
+    Z      $11M   6.63% of vol
+    CRSP   $11M   4.12% of vol
+    SOXX   $11M   21.12% of vol
+    TM     $11M   33.84% of vol
+    EDIT   $11M   2.31% of vol
+    XBI    $11M   3.59% of vol
+    EDOC   $12M   8.62% of vol
+    SCHP   $12M   8.66% of vol
+    GME    $12M   0.82% of vol
+    EZU    $13M   1.83% of vol
+    TLT    $13M   1.55% of vol
+    AZN    $13M   1.12% of vol
+    XSOE   $13M   10.41% of vol
+    MSTR   $13M   9.13% of vol
+    IAI    $13M   230.59% of vol
+    BHP    $14M   5.85% of vol
+    NVDA   $14M   1.09% of vol
+    IGV    $14M   25.55% of vol
+    ABB    $14M   6.54% of vol
+    VV     $15M   64.31% of vol
+    HYS    $15M   70.96% of vol
+    SJNK   $15M   6.39% of vol
+    RPRX   $16M   4.60% of vol
+    SPIP   $16M   19.10% of vol
+    MARA   $16M   0.17% of vol
+    FTFT   $16M   0.57% of vol
+    PLUG   $16M   0.35% of vol
+    PLTR   $17M   0.52% of vol
+    TAN    $18M   5.20% of vol
+    No volume data for SPXSZZZZ
+    FNX    $19M   768.88% of vol
+    SLAB   $19M   43.77% of vol
+    ARKG   $20M   3.94% of vol
+    ICLN   $21M   1.59% of vol
+    MJ     $22M   5.83% of vol
+    No volume data for IDEXY
+    FUBO   $24M   1.86% of vol
+    ROKU   $25M   4.27% of vol
+    DNL    $25M   1035.88% of vol
+    TAL    $25M   13.06% of vol
+    VXUS   $27M   7.46% of vol
+    SUB    $28M   151.86% of vol
+    ABEV   $29M   1.58% of vol
+    ANET   $30M   58.01% of vol
+    TMO    $31M   18.32% of vol
+    DD     $31M   1.99% of vol
+    XLK    $40M   4.48% of vol
+    JNK    $43M   4.85% of vol
+    SPIB   $44M   24.95% of vol
+    QS     $47M   2.44% of vol
+    M      $55M   3.85% of vol
+    EEM    $56M   1.38% of vol
+    TSLA   $89M   1.49% of vol
+    SPY    $99M   1.93% of vol
+    DVN    $115M  10.46% of vol
+    TME    $159M  6.85% of vol
+    QQQ    $195M  5.82% of vol
+    SNOW   $451M  98.52% of vol
+    Data for Jan 12
+    JHMM   $10M   42.23% of vol
+    SIVB   $10M   19.53% of vol
+    EEMA   $10M   96.26% of vol
+    TIP    $10M   3.12% of vol
+    BYND   $11M   3.34% of vol
+    ACIA   $11M   2.31% of vol
+    CDC    $11M   186.21% of vol
+    RGNX   $11M   25.48% of vol
+    QS     $11M   0.22% of vol
+    XLU    $11M   0.96% of vol
+    ENB    $12M   1.81% of vol
+    FTFT   $12M   0.82% of vol
+    GOVT   $12M   1.40% of vol
+    SOCL   $13M   334.53% of vol
+    XSOE   $13M   17.22% of vol
+    No volume data for KBCSY
+    SFIX   $13M   2.47% of vol
+    PXD    $13M   0.50% of vol
+    DRIV   $13M   11.62% of vol
+    PLUG   $14M   0.13% of vol
+    No volume data for CHL
+    No volume data for AMADY
+    SWKS   $14M   7.99% of vol
+    JNK    $14M   1.71% of vol
+    FUBO   $14M   0.09% of vol
+    HYG    $14M   0.35% of vol
+    USMV   $14M   3.59% of vol
+    DIA    $15M   6.72% of vol
+    SUB    $15M   53.86% of vol
+    SJNK   $15M   3.79% of vol
+    PLTR   $17M   0.31% of vol
+    NFRA   $17M   139.34% of vol
+    TSLA   $18M   0.39% of vol
+    VTEB   $18M   13.63% of vol
+    EZU    $18M   1.90% of vol
+    LSI    $19M   20.19% of vol
+    AJAX   $19M   7.37% of vol
+    EDC    $20M   125.76% of vol
+    BLI    $20M   40.02% of vol
+    DASH   $21M   1.52% of vol
+    IEF    $22M   3.37% of vol
+    ASHR   $22M   6.65% of vol
+    SMH    $24M   7.53% of vol
+    TAL    $24M   4.62% of vol
+    DNL    $25M   1015.19% of vol
+    ACCD   $26M   39.64% of vol
+    MXIM   $26M   13.43% of vol
+    CRM    $26M   1.23% of vol
+    KRE    $27M   2.88% of vol
+    ANET   $28M   15.05% of vol
+    VNQ    $33M   4.20% of vol
+    MRVL   $35M   5.54% of vol
+    MBB    $36M   3.48% of vol
+    XLP    $39M   3.55% of vol
+    SPMB   $42M   78.31% of vol
+    IPOE   $50M   3.49% of vol
+    TMKRU  $87M   113.09% of vol
+    TWLO   $103M  40.82% of vol
+    VEA    $289M  35.92% of vol
+    SNOW   $357M  54.42% of vol
+    Data for Jan 13
+    JHMM   $10M   97.74% of vol
+    ALNY   $10M   4.18% of vol
+    SCHE   $10M   6.94% of vol
+    LSI    $10M   4.25% of vol
+    ACTC   $10M   1.02% of vol
+    PFF    $10M   1.43% of vol
+    GOOGL  $10M   9.22% of vol
+    PXD    $11M   1.71% of vol
+    No volume data for AMADY
+    LYV    $11M   2.67% of vol
+    QS     $11M   0.47% of vol
+    XLU    $11M   0.89% of vol
+    VSGX   $12M   54.31% of vol
+    CDC    $12M   305.08% of vol
+    HYG    $12M   0.27% of vol
+    GME    $13M   0.05% of vol
+    AAXJ   $13M   21.00% of vol
+    MIC    $13M   4.27% of vol
+    AI     $13M   2.15% of vol
+    EEMA   $14M   117.73% of vol
+    VCR    $14M   119.47% of vol
+    FNGU   $14M   51.11% of vol
+    VPL    $14M   38.54% of vol
+    CREE   $15M   12.28% of vol
+    ICLN   $15M   1.53% of vol
+    BPY    $16M   4.57% of vol
+    EWH    $16M   3.86% of vol
+    No volume data for HOKCY
+    Z      $16M   9.11% of vol
+    GS     $16M   3.45% of vol
+    VXF    $17M   18.24% of vol
+    EWU    $17M   7.83% of vol
+    BBBY   $19M   1.01% of vol
+    CNQ    $20M   3.07% of vol
+    TSLA   $21M   0.64% of vol
+    RETL   $22M   411.08% of vol
+    PLTR   $22M   0.22% of vol
+    BNTX   $24M   13.26% of vol
+    FMS    $25M   25.08% of vol
+    SPG    $25M   2.89% of vol
+    DNL    $25M   1444.05% of vol
+    TER    $27M   18.48% of vol
+    MDY    $27M   31.37% of vol
+    SPY    $29M   0.66% of vol
+    TMKRU  $29M   49.65% of vol
+    LMND   $44M   4.82% of vol
+    NIO    $46M   0.20% of vol
+    ASHR   $58M   29.73% of vol
+    CCIV   $72M   0.39% of vol
+    SCHF   $84M   35.46% of vol
+    QQQ    $100M  4.28% of vol
+    IEMG   $106M  4.34% of vol
+    TWLO   $155M  52.10% of vol
+    SNOW   $292M  50.73% of vol
+    Data for Jan 14
+    FUTU   $10M   1.23% of vol
+    GLD    $10M   0.75% of vol
+    RKT    $10M   1.74% of vol
+    GOOG   $10M   9.10% of vol
+    JKS    $11M   3.34% of vol
+    NIO    $11M   0.11% of vol
+    BBY    $11M   5.56% of vol
+    ACWI   $11M   2.55% of vol
+    IWM    $11M   0.34% of vol
+    NARI   $11M   15.86% of vol
+    VIS    $11M   73.84% of vol
+    No volume data for CCIVU
+    BNDX   $12M   4.11% of vol
+    ACTCW  $12M   9.69% of vol
+    ESGU   $12M   0.64% of vol
+    TFI    $12M   43.41% of vol
+    ACI    $12M   4.31% of vol
+    ESGV   $12M   41.73% of vol
+    VONV   $12M   61.55% of vol
+    QS     $13M   0.94% of vol
+    BUG    $13M   30.53% of vol
+    TSJA   $13M   1311.36% of vol
+    EWU    $13M   4.16% of vol
+    AAXJ   $13M   13.23% of vol
+    ALLK   $14M   58.59% of vol
+    PLTR   $14M   0.42% of vol
+    XBI    $14M   2.33% of vol
+    IBM    $14M   1.97% of vol
+    SPCE   $15M   0.27% of vol
+    BNTX   $15M   8.11% of vol
+    EWQ    $15M   16.84% of vol
+    INTC   $15M   0.21% of vol
+    MUB    $15M   8.53% of vol
+    IDYA   $16M   85.99% of vol
+    SPDW   $17M   16.33% of vol
+    MCK    $18M   25.92% of vol
+    BIL    $18M   9.15% of vol
+    NOC    $18M   13.56% of vol
+    GME    $19M   0.21% of vol
+    FMS    $19M   36.32% of vol
+    AI     $20M   5.69% of vol
+    TSLA   $22M   0.70% of vol
+    RETL   $22M   219.73% of vol
+    ZM     $22M   2.42% of vol
+    VGT    $23M   52.66% of vol
+    LMND   $24M   1.56% of vol
+    LQD    $25M   1.15% of vol
+    XLC    $25M   9.98% of vol
+    SPY    $26M   0.52% of vol
+    AZN    $28M   2.40% of vol
+    FUBO   $28M   0.86% of vol
+    TMKRU  $29M   463.97% of vol
+    JWN    $31M   2.65% of vol
+    NCNO   $36M   26.85% of vol
+    TTD    $38M   59.24% of vol
+    VIPS   $39M   6.04% of vol
+    MSOS   $43M   33.24% of vol
+    AZRE   $49M   225.48% of vol
+    SMH    $55M   16.43% of vol
+    RLAY   $64M   24.76% of vol
+    ASHR   $67M   26.18% of vol
+    ACTC   $80M   8.97% of vol
+    CCIV   $141M  0.99% of vol
+    IEMG   $515M  41.22% of vol
+
+I'll let y'all discuss what this means in the comments. Have Fun.",larhlw,<praw.models.comment_forest.CommentForest object at 0x0E6D40A0>
