@@ -133,7 +133,7 @@ class SReddit():
 
 
             #questo è per creare una maschera tramite un'immagine in locale
-            mask = np.array(Image.open("immagine.jpg"))
+            mask = np.array(Image.open("img.png"))
 
 
             wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0 ,contour_color='black', width=400, height=400)
@@ -187,14 +187,14 @@ def to_csv(d, name, header=None, index=False):
 # prova del codice#
 
 
-Sreddit = SReddit('wallstreetbets', 10, ['GME', 'BTC', 'silver', '$GME'])
+Sreddit = SReddit('wallstreetbets', 1000, ['GME', 'BTC', 'silver', '$GME'])
 
 Sreddit.scraper(tocsv=True)
 
 frequenze = Sreddit.frequency(tocsv=True)
 
 
-top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=10)
+top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=100)
 
 hot_ratio = Sreddit.hottest_ones(tocsv=True)
 
