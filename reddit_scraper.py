@@ -189,3 +189,4 @@ frequenze = Sreddit.frequency(tocsv=False)
 top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=1500)
 
 hot_ratio = Sreddit.hottest_ones(tocsv=False)
+
