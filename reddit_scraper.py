@@ -105,7 +105,7 @@ class SReddit():
         excluded_words = ['The', 'the', 'a', 'my', 'all', 'with', 'is', 'this', 'The', 'A', 'All', 'To', 'to', 'just',
                           'and', 'you', 'are', 'at', 'on', 'in', 'if', 'it', 'when', 'while', 'I', 'what', 'have',
                           'got', 'but', 'up', 'for', 'more', 'we', 'can', 'THE', 'i'
-                            ,'of', 'me', 'only', '-', 'YOU', 'be', 'that', 'retard','fuck']
+                            ,'of', 'me', 'only', '-', 'YOU', 'be', 'that']
 
         for i in excluded_words: del self.count[i]
 
@@ -128,13 +128,13 @@ class SReddit():
             # mask = np.array(Image.open(
             # requests.get(mask_image, stream=True).raw))
 
+
             # to use wordlcloud with local image
-            mask = np.array(Image.open("img.png"))
+            mask = np.array(Image.open("reddit_logo.png"))
 
             wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0,
                                   contour_color='black', width=800, height=800, colormap= 'inferno', font_path='Helvetica Neu Bold.ttf')
 
-            #colori wordmap:
             wordcloud.generate(' '.join(X))
 
             plt.figure(figsize=(5, 5))
