@@ -10,7 +10,6 @@ from PIL import Image
 from wordcloud import WordCloud
 
 
-
 class SReddit():
     '''
     classe SReddit
