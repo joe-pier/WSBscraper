@@ -9,11 +9,6 @@ import praw
 from PIL import Image
 from wordcloud import WordCloud
 
-'''
-link utili:
-https://datatofish.com/pandas-dataframe-to-sql/
-https://www.kite.com/python/answers/how-to-insert-the-contents-of-a-csv-file-into-an-sqlite3-database-in-python
-'''
 
 
 class SReddit():
