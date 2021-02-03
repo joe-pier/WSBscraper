@@ -109,7 +109,6 @@ class SReddit():
 
 
         X, Y = [*zip(*sorted_count)]
-
         if tocsv == True:
             to_csv(sorted_count, 'TOP USED WORDS', header=['WORD', 'OCCURRENCES'])
 
