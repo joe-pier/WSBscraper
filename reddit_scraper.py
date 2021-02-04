@@ -85,7 +85,7 @@ class SReddit():
 
         return self.keywords_dict
 
-    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100):
+    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100, output_img='RedditWordCloud'):
         '''
         most used words
         :return:
@@ -121,15 +121,17 @@ class SReddit():
             # mask = np.array(Image.open(
             # requests.get(mask_image, stream=True).raw))
             # to use wordlcloud with local image
-            mask = np.array(Image.open("reddit_logo.png"))
+            mask = np.array(Image.open("wordcloud/reddit_logo.png"))
 
             wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0,
-                                  contour_color='black', width=800, height=800, colormap= 'inferno', font_path='Helvetica Neu Bold.ttf')
+                                  contour_color='black', width=800, height=800, colormap= 'inferno', font_path='wordcloud/Helvetica Neu Bold.ttf')
 
             wordcloud.generate(' '.join(X))
             plt.figure(figsize=(5, 5))
             plt.imshow(wordcloud, interpolation='bilinear')
             plt.axis("off")
+
+            plt.savefig('exemples/'+output_img)
             plt.show()
         return sorted_count
 
@@ -177,10 +179,10 @@ if __name__ == "__main__":
     #insert here the limit of posts
     limit = 1500
     Sreddit = SReddit(sub_reddit, limit, key_words)
-    if(not Sreddit.scraper(tocsv=True)):
+    if(not Sreddit.scraper(tocsv=False)):
         print("Insert password and username about reddit account")
         os._exit(-1)
-    frequence = Sreddit.frequency(tocsv=True)
-    top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=1500)
-    hot_ratio = Sreddit.hottest_ones(tocsv=True)
+    frequence = Sreddit.frequency(tocsv=False)
+    top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=1500)
+    hot_ratio = Sreddit.hottest_ones(tocsv=False)
 
