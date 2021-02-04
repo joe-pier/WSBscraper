@@ -121,7 +121,10 @@ class SReddit():
             # mask = np.array(Image.open(
             # requests.get(mask_image, stream=True).raw))
             # to use wordlcloud with local image
-            mask = np.array(Image.open("wordcloud/reddit_logo.png"))
+
+            #image to use with worldcloud
+            img = "wordcloud/reddit_logo.png"
+            mask = np.array(Image.open(img))
 
             wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0,
                                   contour_color='black', width=800, height=800, colormap= 'inferno', font_path='wordcloud/Helvetica Neu Bold.ttf')
