@@ -90,7 +90,7 @@ class SReddit():
         most used words
         :return:
         '''
-        
+
         items = self.posts['title']
         conc_items = '\n'.join(items)
         conc_ = conc_items.split(' ')
@@ -109,7 +109,7 @@ class SReddit():
         #list containing in order the most used words excluding the useless words
         X, Y = [*zip(*sorted_count)]
         if tocsv == True:
-            to_csv(sorted_count, 'TOP USED WORDS', header=['WORD', 'OCCURRENCES'])
+            to_csv(sorted_count, 'TOP_USED_WORDS', header=['WORD', 'OCCURRENCES'])
 
         if plot_ == True:
             plt.bar(X, Y)
@@ -154,10 +154,9 @@ class SReddit():
         sorted_lista = sorted(lista, key=itemgetter(2), reverse=True)
 
         if tocsv == True:
-            to_csv(sorted_lista, 'HOTTEST ONES', header=['time', 'post', 'hot ratio'])
+            to_csv(sorted_lista, 'HOTTEST_ONES', header=['time', 'post', 'hot ratio'])
 
         return sorted_lista
-
 
 def to_csv(d, name, header=None, index=False):
     '''
@@ -169,11 +168,14 @@ def to_csv(d, name, header=None, index=False):
     df.to_csv(name + '.csv', header=header, index=index)
     return df
 
-
 if __name__ == "__main__":
-
-    Sreddit = SReddit('wallstreetbets', 1500, ['GME', 'BTC', 'silver', '$GME'])
-
+    #insert here your keywords
+    key_words = ['GME', 'BTC', 'silver', '$GME']
+    #insert here the subreddit
+    sub_reddit = 'wallstreetbets'
+    #insert here the limit of posts
+    limit = 1500
+    Sreddit = SReddit(sub_reddit, limit, key_words)
     if(not Sreddit.scraper(tocsv=False)):
         print("Insert password and username about reddit account")
         os._exit(-1)
