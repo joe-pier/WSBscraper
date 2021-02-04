@@ -8,92 +8,94 @@ import pandas as pd
 import praw
 from PIL import Image
 from wordcloud import WordCloud
-
+import os
 
 class SReddit():
     '''
-    classe SReddit
-    '''
-
-    def __init__(self, subreddit, limit, keywords, d=None, keywords_dict=None, count=None):
+    class SReddit
+    ''' 
+    def __init__(self, subreddit, limit, keywords, posts=None, keywords_dict=None, count=None):
         if count is None:
             count = {}
         if keywords_dict is None:
             keywords_dict = {}
-        if d is None:
-            d = {}
+        if posts is None:
+            posts = {}
         self.subreddit = subreddit
         self.limit = limit
         self.keywords = keywords
-        self.d = d
+        self.posts = posts
         self.keywords_dict = keywords_dict
         self.count = count
 
     def scraper(self, tocsv=False):
         '''
-        scraping del subreddit definito nell'oggetto
-        :return: dizionario
+        scraping of subredit definited in the object 
         '''
+        ### INSERT HERE THE PASSWORD AND USERNAME OF YOUR ACCOUNT REDDIT ###
+        usr = ""
+        psw = ""
+        #check if the password and username are empty
+        if (not usr )and( not psw):
+            return False 
 
         reddit = praw.Reddit(client_id='z2edaKf81OaY2w',
                              client_secret='ZgEG_HottISxIa27_UlXipTDY8j-vA',
                              user_agent='WSBscraper',
-                             username='',
-                             password='')
-        # NB. il codice funziona se viene messa la propria password e nome utente in username e password.
+                             username=usr, 
+                             password=psw)
+
         subreddit = reddit.subreddit(self.subreddit)
         new_sub = subreddit.new(limit=self.limit)
-
-        self.d = {'time': [], 'upvotes': [], 'title': [], 'body': []}
-
+        #create the struct of the posts dictonary 
+        self.posts = {'time': [], 'upvotes': [], 'title': [], 'body': []}
+        #add posts
         for submission in new_sub:
-            self.d['time'].append(submission.created_utc)
-            self.d['upvotes'].append(submission.score)
-            self.d['body'].append(submission.selftext)
-            self.d['title'].append(submission.title)
-            # self.d['id'].append(submission.id)
-            # self.d['comments'].append(submission.comments)
-            # self.d['author'].append(submission.author)
-
+            self.posts['time'].append(submission.created_utc)
+            self.posts['upvotes'].append(submission.score)
+            self.posts['body'].append(submission.selftext)
+            self.posts['title'].append(submission.title)
+            # self.posts['id'].append(submission.id)
+            # self.posts['comments'].append(submission.comments)
+            # self.posts['author'].append(submission.author)
+        # convert to CSV?
         if tocsv == True:
-            to_csv(self.d, 'REDDIT')
-        return self.d
+            to_csv(self.posts, 'REDDIT')
+        return self.posts
 
     def frequency(self, tocsv=False):
         '''
-        per calcolare il numero di volte che una o più  keyword viene nominata
-        per trasformarlo in un .csv basta usare la funzione to_csv
+        for calculate the number of times of the keyword it's nominated 
         :return: dictionary
         '''
-        df = pd.DataFrame(self.d)
-        titoli = df['title']
+        df = pd.DataFrame(self.posts)
+        title = df['title']
 
         keywords = self.keywords
 
         self.keywords_dict = dict.fromkeys(keywords, 0)
 
-        for i in titoli:
+        for i in title:
             for j in i.split():
                 for k in self.keywords_dict.keys():
                     if j == k:
                         self.keywords_dict[k] += 1
         if tocsv == True:
-            to_csv([self.keywords_dict], 'FREQUENZE', header=self.keywords)
+            to_csv([self.keywords_dict], 'FREQUENCE', header=self.keywords)
 
         return self.keywords_dict
 
     def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100):
         '''
-        parole più utilizzate
+        most used words
         :return:
         '''
-
-        items = self.d['title']
-
+        
+        items = self.posts['title']
         conc_items = '\n'.join(items)
         conc_ = conc_items.split(' ')
 
-        # è un dizionario
+        # is a dictonary
         self.count = Counter(conc_)
 
         excluded_words = ['The', 'the', 'a', 'my', 'all', 'with', 'is', 'this', 'The', 'A', 'All', 'To', 'to', 'just',
@@ -104,9 +106,7 @@ class SReddit():
         for i in excluded_words: del self.count[i]
 
         sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
-        # lista contenente in ordine le parole più usate escluse le parole inutili
-
-
+        #list containing in order the most used words excluding the useless words
         X, Y = [*zip(*sorted_count)]
         if tocsv == True:
             to_csv(sorted_count, 'TOP USED WORDS', header=['WORD', 'OCCURRENCES'])
@@ -120,8 +120,6 @@ class SReddit():
             # mask_image = 'https://image.flaticon.com/icons/png/512/52/52191.png'
             # mask = np.array(Image.open(
             # requests.get(mask_image, stream=True).raw))
-
-
             # to use wordlcloud with local image
             mask = np.array(Image.open("reddit_logo.png"))
 
@@ -129,26 +127,22 @@ class SReddit():
                                   contour_color='black', width=800, height=800, colormap= 'inferno', font_path='Helvetica Neu Bold.ttf')
 
             wordcloud.generate(' '.join(X))
-
             plt.figure(figsize=(5, 5))
             plt.imshow(wordcloud, interpolation='bilinear')
             plt.axis("off")
             plt.show()
-
         return sorted_count
-
 
     def hottest_ones(self, tocsv=False):
         '''
         attempt to catch the best reddit posts that are likely to become the top ones
-
-        tanto maggiore è il numero di upvotes e tanto minore è il tempo dal quale è stato scritto tanto più alto sarà il suo "hot_ratio"
+        the greater the number of upvotes and the shorter the time from which it was written the higher will be its "hot_ratio"
         :return:
         '''
 
-        title = self.d['title']
-        upvotes = self.d['upvotes']
-        time_ = self.d['time']
+        title = self.posts['title']
+        upvotes = self.posts['upvotes']
+        time_ = self.posts['time']
         DateTime = [datetime.utcfromtimestamp(f).strftime('%Y-%m-%d %H:%M:%S') for f in time_]
         actual_time = time.time()
 
@@ -167,8 +161,8 @@ class SReddit():
 
 def to_csv(d, name, header=None, index=False):
     '''
-    input è un dizionario.
-    per creare direttamente il file .csv
+    the input is a dictonary
+    for create a csv file
     :return: dataframe pandas
     '''
     df = pd.DataFrame(d)
@@ -176,16 +170,14 @@ def to_csv(d, name, header=None, index=False):
     return df
 
 
-# prova del codice#
+if __name__ == "__main__":
 
+    Sreddit = SReddit('wallstreetbets', 1500, ['GME', 'BTC', 'silver', '$GME'])
 
-Sreddit = SReddit('wallstreetbets', 1500, ['GME', 'BTC', 'silver', '$GME'])
-
-Sreddit.scraper(tocsv=False)
-
-frequenze = Sreddit.frequency(tocsv=False)
-
-top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=1500)
-
-hot_ratio = Sreddit.hottest_ones(tocsv=False)
+    if(not Sreddit.scraper(tocsv=False)):
+        print("Insert password and username about reddit account")
+        os._exit(-1)
+    frequence = Sreddit.frequency(tocsv=False)
+    top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=1500)
+    hot_ratio = Sreddit.hottest_ones(tocsv=False)
 
