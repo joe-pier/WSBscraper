@@ -1,5 +1,5 @@
 # WSBscraper
-Just Reddit Scraper
+Reddit Scraper
 
 Work in progress...
 
