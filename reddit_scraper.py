@@ -33,8 +33,8 @@ class SReddit():
         scraping of subredit definited in the object 
         '''
         ### INSERT HERE THE PASSWORD AND USERNAME OF YOUR ACCOUNT REDDIT ###
-        usr = ""
-        psw = ""
+        usr = "Logical_Delivery8331"
+        psw = "070719981998aA%#[]"
         #check if the password and username are empty
         if (not usr )and( not psw):
             return False 
@@ -60,7 +60,7 @@ class SReddit():
             # self.posts['author'].append(submission.author)
         # convert to CSV?
         if tocsv == True:
-            to_csv(self.posts, 'REDDIT')
+            to_csv(self.posts, 'exemples/REDDIT')
         return self.posts
 
     def frequency(self, tocsv=False):
@@ -81,7 +81,7 @@ class SReddit():
                     if j == k:
                         self.keywords_dict[k] += 1
         if tocsv == True:
-            to_csv([self.keywords_dict], 'FREQUENCE', header=self.keywords)
+            to_csv([self.keywords_dict], 'exemples/FREQUENCE', header=self.keywords)
 
         return self.keywords_dict
 
@@ -109,7 +109,7 @@ class SReddit():
         #list containing in order the most used words excluding the useless words
         X, Y = [*zip(*sorted_count)]
         if tocsv == True:
-            to_csv(sorted_count, 'TOP_USED_WORDS', header=['WORD', 'OCCURRENCES'])
+            to_csv(sorted_count, 'exemples/TOP_USED_WORDS', header=['WORD', 'OCCURRENCES'])
 
         if plot_ == True:
             plt.bar(X, Y)
@@ -154,7 +154,7 @@ class SReddit():
         sorted_lista = sorted(lista, key=itemgetter(2), reverse=True)
 
         if tocsv == True:
-            to_csv(sorted_lista, 'HOTTEST_ONES', header=['time', 'post', 'hot ratio'])
+            to_csv(sorted_lista, 'exemples/HOTTEST_ONES', header=['time', 'post', 'hot ratio'])
 
         return sorted_lista
 
@@ -168,6 +168,7 @@ def to_csv(d, name, header=None, index=False):
     df.to_csv(name + '.csv', header=header, index=index)
     return df
 
+
 if __name__ == "__main__":
     #insert here your keywords
     key_words = ['GME', 'BTC', 'silver', '$GME']
@@ -176,10 +177,10 @@ if __name__ == "__main__":
     #insert here the limit of posts
     limit = 1500
     Sreddit = SReddit(sub_reddit, limit, key_words)
-    if(not Sreddit.scraper(tocsv=False)):
+    if(not Sreddit.scraper(tocsv=True)):
         print("Insert password and username about reddit account")
         os._exit(-1)
-    frequence = Sreddit.frequency(tocsv=False)
-    top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=1500)
-    hot_ratio = Sreddit.hottest_ones(tocsv=False)
+    frequence = Sreddit.frequency(tocsv=True)
+    top_words = Sreddit.top__used_words(tocsv=True, plot_=False, WordCloud_=True, CloudDimension=1500)
+    hot_ratio = Sreddit.hottest_ones(tocsv=True)
 
