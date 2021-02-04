@@ -33,8 +33,8 @@ class SReddit():
         scraping of subredit definited in the object 
         '''
         ### INSERT HERE THE PASSWORD AND USERNAME OF YOUR ACCOUNT REDDIT ###
-        usr = "Logical_Delivery8331"
-        psw = "070719981998aA%#[]"
+        usr = ""
+        psw = ""
         #check if the password and username are empty
         if (not usr )and( not psw):
             return False 
