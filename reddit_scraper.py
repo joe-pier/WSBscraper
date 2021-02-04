@@ -1,19 +1,23 @@
+import os
 import time
 from collections import Counter
 from datetime import datetime
 from operator import itemgetter
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import praw
 from PIL import Image
+
 from wordcloud import WordCloud
-import os
+
 
 class SReddit():
     '''
     class SReddit
-    ''' 
+    '''
+
     def __init__(self, subreddit, limit, keywords, posts=None, keywords_dict=None, count=None):
         if count is None:
             count = {}
@@ -33,23 +37,24 @@ class SReddit():
         scraping of subredit definited in the object 
         '''
         ### INSERT HERE THE PASSWORD AND USERNAME OF YOUR ACCOUNT REDDIT ###
+        ### IF YOU HAVE 2FA ACTIVE USE THE FOLLOWING SINTAX FOR PASSWORD: "PASSWORD:2FACODE" ###
         usr = ""
         psw = ""
-        #check if the password and username are empty
-        if (not usr )and( not psw):
-            return False 
+        # check if the password and username are empty
+        if (not usr) and (not psw):
+            return False
 
         reddit = praw.Reddit(client_id='z2edaKf81OaY2w',
                              client_secret='ZgEG_HottISxIa27_UlXipTDY8j-vA',
                              user_agent='WSBscraper',
-                             username=usr, 
+                             username=usr,
                              password=psw)
 
         subreddit = reddit.subreddit(self.subreddit)
         new_sub = subreddit.new(limit=self.limit)
-        #create the struct of the posts dictonary 
+        # create the struct of the posts dictonary
         self.posts = {'time': [], 'upvotes': [], 'title': [], 'body': []}
-        #add posts
+        # add posts
         for submission in new_sub:
             self.posts['time'].append(submission.created_utc)
             self.posts['upvotes'].append(submission.score)
@@ -85,7 +90,8 @@ class SReddit():
 
         return self.keywords_dict
 
-    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100, output_img='RedditWordCloud'):
+    def top__used_words(self, tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100,
+                        output_img='RedditWordCloud'):
         '''
         most used words
         :return:
@@ -101,12 +107,12 @@ class SReddit():
         excluded_words = ['The', 'the', 'a', 'my', 'all', 'with', 'is', 'this', 'The', 'A', 'All', 'To', 'to', 'just',
                           'and', 'you', 'are', 'at', 'on', 'in', 'if', 'it', 'when', 'while', 'I', 'what', 'have',
                           'got', 'but', 'up', 'for', 'more', 'we', 'can', 'THE', 'i'
-                            ,'of', 'me', 'only', '-', 'YOU', 'be', 'that']
+            , 'of', 'me', 'only', '-', 'YOU', 'be', 'that', 'or', 'about', 'from', 'still', 'out','so','do', 'their', 'has', 'some','TO']
 
         for i in excluded_words: del self.count[i]
 
         sorted_count = sorted(self.count.items(), key=itemgetter(1), reverse=True)
-        #list containing in order the most used words excluding the useless words
+        # list containing in order the most used words excluding the useless words
         X, Y = [*zip(*sorted_count)]
         if tocsv == True:
             to_csv(sorted_count, 'exemples/TOP_USED_WORDS', header=['WORD', 'OCCURRENCES'])
@@ -122,19 +128,20 @@ class SReddit():
             # requests.get(mask_image, stream=True).raw))
             # to use wordlcloud with local image
 
-            #image to use with worldcloud
+            # image to use with worldcloud
             img = "wordcloud/reddit_logo.png"
             mask = np.array(Image.open(img))
 
             wordcloud = WordCloud(background_color="white", max_words=CloudDimension, mask=mask, contour_width=0,
-                                  contour_color='black', width=800, height=800, colormap= 'inferno', font_path='wordcloud/Helvetica Neu Bold.ttf')
+                                  contour_color='black', width=800, height=800, colormap='inferno',
+                                  font_path='wordcloud/Helvetica Neu Bold.ttf')
 
             wordcloud.generate(' '.join(X))
             plt.figure(figsize=(5, 5))
             plt.imshow(wordcloud, interpolation='bilinear')
             plt.axis("off")
 
-            plt.savefig('exemples/'+output_img)
+            plt.savefig('exemples/' + output_img)
             plt.show()
         return sorted_count
 
@@ -163,6 +170,7 @@ class SReddit():
 
         return sorted_lista
 
+
 def to_csv(d, name, header=None, index=False):
     '''
     the input is a dictonary
@@ -175,17 +183,16 @@ def to_csv(d, name, header=None, index=False):
 
 
 if __name__ == "__main__":
-    #insert here your keywords
+    # insert here your keywords
     key_words = ['GME', 'BTC', 'silver', '$GME']
-    #insert here the subreddit
+    # insert here the subreddit
     sub_reddit = 'wallstreetbets'
-    #insert here the limit of posts
+    # insert here the limit of posts
     limit = 1500
     Sreddit = SReddit(sub_reddit, limit, key_words)
-    if(not Sreddit.scraper(tocsv=False)):
+    if (not Sreddit.scraper(tocsv=False)):
         print("Insert password and username about reddit account")
         os._exit(-1)
     frequence = Sreddit.frequency(tocsv=False)
     top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=1500)
     hot_ratio = Sreddit.hottest_ones(tocsv=False)
-
