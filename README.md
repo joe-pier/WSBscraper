@@ -7,7 +7,7 @@ Soon a website to visualize the data and possibly a good NLP algorithm!
 
 TO USE THE SCRIPT PLEASE FILL IN ONLY WITH YOUR USERNAME
 
-Running the script you will scrape the WSB subreddit and retrive the data shown in the REDDIT.csv file. 
+Running the script will scrape the WSB subreddit and retrive the data shown in the REDDIT.csv file. 
 The data are analyzed through some functions, which can output a .csv file visible in the exemples folder, 
 if the tocsv parameter is set to True.
 
