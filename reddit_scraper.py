@@ -36,19 +36,18 @@ class SReddit():
         '''
         scraping of subredit definited in the object 
         '''
-        ### INSERT HERE THE PASSWORD AND USERNAME OF YOUR ACCOUNT REDDIT ###
-        ### IF YOU HAVE 2FA ACTIVE USE THE FOLLOWING SINTAX FOR PASSWORD: "PASSWORD:2FACODE" ###
-        usr = ""
-        psw = ""
+        ### FILL IN WITH THE USERNAME YOUR REDDIT ACCOUNT  ###
+
+        usr = 'YOU REDDIT USERNAME'
+
         # check if the password and username are empty
         if (not usr) and (not psw):
             return False
 
-        reddit = praw.Reddit(client_id='z2edaKf81OaY2w',
-                             client_secret='ZgEG_HottISxIa27_UlXipTDY8j-vA',
-                             user_agent='WSBscraper',
-                             username=usr,
-                             password=psw)
+        reddit = praw.Reddit(client_id='hvUkZg4M5VRv_g',
+                             client_secret='GsV8Dnr1M8nwV0-3YTvIedlSE0yAaQ',
+                             user_agent='RScraper',
+                             username=usr)
 
         subreddit = reddit.subreddit(self.subreddit)
         new_sub = subreddit.new(limit=self.limit)
@@ -191,8 +190,8 @@ if __name__ == "__main__":
     limit = 1500
     Sreddit = SReddit(sub_reddit, limit, key_words)
     if (not Sreddit.scraper(tocsv=False)):
-        print("Insert password and username about reddit account")
+        print("PLEASE fill in with your reddit username")
         os._exit(-1)
     frequence = Sreddit.frequency(tocsv=False)
-    top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=1500)
+    top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=100)
     hot_ratio = Sreddit.hottest_ones(tocsv=False)

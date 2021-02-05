@@ -5,7 +5,7 @@ Work in progress...
 
 Soon a website to visualize the data and possibly a good NLP algorithm!
 
-To use it, fill in with your Reddit username and password in the scraper function following the instruction in the code.
+TO USE THE SCRIPT PLEASE FILL IN ONLY WITH YOUR USERNAME
 
 Contact: </br> 
     joe-pier  :   pier98.dipa@gmail.com</br>
