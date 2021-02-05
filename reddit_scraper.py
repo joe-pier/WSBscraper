@@ -36,7 +36,7 @@ class SReddit():
         '''
         scraping of subredit definited in the object 
         '''
-        ### FILL IN WITH THE USERNAME YOUR REDDIT ACCOUNT  ###
+        ### FILL IN WITH YOUR REDDIT ACCOUNT USERNAME  ###
 
         usr = 'YOU REDDIT USERNAME'
 
