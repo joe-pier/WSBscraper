@@ -65,6 +65,7 @@ class SReddit():
         # convert to CSV?
         if tocsv == True:
             to_csv(self.posts, 'exemples/REDDIT')
+
         return self.posts
 
     def frequency(self, tocsv=False):
@@ -170,6 +171,29 @@ class SReddit():
         return sorted_lista
 
 
+    def naive_count(self):
+        import re
+        import string
+        from nltk.tokenize import word_tokenize
+        from collections import Counter
+        #print(self.posts['title'])
+
+        tokens = []
+
+        for text in self.posts['title']:
+            text_no_numbers_no_punctuation = re.sub("[^-9A-Za-z ]", '', text)
+            text_no_upper_case = "".join([i.lower() for i in text_no_numbers_no_punctuation if i not in string.punctuation])
+            text_tokenized = word_tokenize(text_no_upper_case)
+
+            tokens += text_tokenized
+            #print(text_tokenized)
+
+        counts = Counter(tokens)
+        print(counts)
+        return counts
+
+
+
 def to_csv(d, name, header=None, index=False):
     '''
     the input is a dictonary
@@ -181,17 +205,22 @@ def to_csv(d, name, header=None, index=False):
     return df
 
 
+
+
+
 if __name__ == "__main__":
     # insert here your keywords
     key_words = ['GME', 'BTC', 'silver', '$GME']
     # insert here the subreddit
     sub_reddit = 'wallstreetbets'
     # insert here the limit of posts
-    limit = 1500
+    limit = 20
     Sreddit = SReddit(sub_reddit, limit, key_words)
-    if (not Sreddit.scraper(tocsv=False)):
+    if (not Sreddit.scraper(tocsv=True)):
         print("PLEASE fill in with your reddit username")
         os._exit(-1)
-    frequence = Sreddit.frequency(tocsv=False)
-    top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=True, CloudDimension=100)
-    hot_ratio = Sreddit.hottest_ones(tocsv=False)
+
+    Sreddit.naive_count()
+    #frequence = Sreddit.frequency(tocsv=False)
+    #top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100)
+    #hot_ratio = Sreddit.hottest_ones(tocsv=False)
