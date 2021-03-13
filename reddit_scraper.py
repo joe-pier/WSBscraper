@@ -220,7 +220,7 @@ if __name__ == "__main__":
         print("PLEASE fill in with your reddit username")
         os._exit(-1)
 
-    Sreddit.naive_count()
+    #Sreddit.naive_count()
     #frequence = Sreddit.frequency(tocsv=False)
     #top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100)
     #hot_ratio = Sreddit.hottest_ones(tocsv=False)
