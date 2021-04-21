@@ -11,7 +11,9 @@ import praw
 from PIL import Image
 
 from wordcloud import WordCloud
-
+import nltk
+#nltk.download('vader_lexicon')
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 class SReddit():
     '''
@@ -31,6 +33,7 @@ class SReddit():
         self.posts = posts
         self.keywords_dict = keywords_dict
         self.count = count
+        self.test = {}
 
     def scraper(self, tocsv=False):
         '''
@@ -64,7 +67,7 @@ class SReddit():
             # self.posts['author'].append(submission.author)
         # convert to CSV?
         if tocsv == True:
-            to_csv(self.posts, 'exemples/REDDIT')
+            to_csv(self.posts, 'exemples/REDDIT', header=True, )
 
         return self.posts
 
@@ -79,14 +82,18 @@ class SReddit():
         keywords = self.keywords
 
         self.keywords_dict = dict.fromkeys(keywords, 0)
-
         for i in title:
             for j in i.split():
                 for k in self.keywords_dict.keys():
                     if j == k:
                         self.keywords_dict[k] += 1
+                        if k not in self.test.keys():
+                            self.test[k] = [i]
+                        else:
+                            self.test[k] += [i]
         if tocsv == True:
             to_csv([self.keywords_dict], 'exemples/FREQUENCE', header=self.keywords)
+            to_csv([self.test], 'exemples/TEST', header=self.keywords)
 
         return self.keywords_dict
 
@@ -171,7 +178,7 @@ class SReddit():
         return sorted_lista
 
 
-    def naive_count(self):
+    def naive_count(self, graph = False):
         import re
         import string
         from nltk.tokenize import word_tokenize
@@ -188,9 +195,27 @@ class SReddit():
             tokens += text_tokenized
             #print(text_tokenized)
 
-        counts = Counter(tokens)
-        print(counts)
-        return counts
+        naive_counts = Counter(tokens)
+
+
+        return naive_counts
+
+    def general_sentiment(self):
+        data = pd.read_csv('exemples/REDDIT.csv')
+        pd_data = pd.DataFrame(data)
+        col_name = list(data)
+        m = len(pd_data)
+
+        total = 0
+        for i in range(0, m):
+            sentence = data[col_name[2]][i]
+            sid = SentimentIntensityAnalyzer()
+            test = sid.polarity_scores(sentence)
+            # print(f'{sentence} = {test}')
+            total += test['compound']
+        return total
+
+
 
 
 
@@ -210,17 +235,24 @@ def to_csv(d, name, header=None, index=False):
 
 if __name__ == "__main__":
     # insert here your keywords
-    key_words = ['GME', 'BTC', 'silver', '$GME']
+    key_words = ['GME', 'MVIS']
     # insert here the subreddit
     sub_reddit = 'wallstreetbets'
     # insert here the limit of posts
-    limit = 20
+    limit = 5
     Sreddit = SReddit(sub_reddit, limit, key_words)
     if (not Sreddit.scraper(tocsv=True)):
         print("PLEASE fill in with your reddit username")
         os._exit(-1)
 
-    #Sreddit.naive_count()
-    #frequence = Sreddit.frequency(tocsv=False)
+
+    mark = Sreddit.general_sentiment()
+    print(mark)
+
+
+
+    #Sreddit.naive_count(graph=True)
+    #frequence = Sreddit.frequency(tocsv=True)
+    #print(Sreddit.test)
     #top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100)
     #hot_ratio = Sreddit.hottest_ones(tocsv=False)
