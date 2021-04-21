@@ -215,6 +215,12 @@ class SReddit():
             total += test['compound']
         return total
 
+    def specific_sentiment(self):
+        '''
+
+        :return:
+        '''
+        pass
 
 
 
@@ -239,7 +245,7 @@ if __name__ == "__main__":
     # insert here the subreddit
     sub_reddit = 'wallstreetbets'
     # insert here the limit of posts
-    limit = 5
+    limit = 500
     Sreddit = SReddit(sub_reddit, limit, key_words)
     if (not Sreddit.scraper(tocsv=True)):
         print("PLEASE fill in with your reddit username")
@@ -249,10 +255,10 @@ if __name__ == "__main__":
     mark = Sreddit.general_sentiment()
     print(mark)
 
+    frequence = Sreddit.frequency(tocsv=True)
+    print(Sreddit.test)
 
 
     #Sreddit.naive_count(graph=True)
-    #frequence = Sreddit.frequency(tocsv=True)
-    #print(Sreddit.test)
     #top_words = Sreddit.top__used_words(tocsv=False, plot_=False, WordCloud_=False, CloudDimension=100)
     #hot_ratio = Sreddit.hottest_ones(tocsv=False)
