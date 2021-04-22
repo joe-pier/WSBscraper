@@ -89,6 +89,7 @@ class SReddit():
                         self.keywords_dict[k] += 1
                         if k not in self.test.keys():
                             self.test[k] = [i]
+
                         else:
                             self.test[k] += [i]
         if tocsv == True:
@@ -220,8 +221,20 @@ class SReddit():
 
         :return:
         '''
-        pass
 
+        data = self.test
+        dizionario = {}
+        for i in self.keywords:
+            #print(i)
+            total_=0
+            for sentence_ in data[i]:
+                sid = SentimentIntensityAnalyzer()
+                test = sid.polarity_scores(sentence_)
+                total_ += test['compound']
+                #print(total_)
+            dizionario[i]=total_
+
+        return dizionario
 
 
 
@@ -245,7 +258,7 @@ if __name__ == "__main__":
     # insert here the subreddit
     sub_reddit = 'wallstreetbets'
     # insert here the limit of posts
-    limit = 500
+    limit = 100
     Sreddit = SReddit(sub_reddit, limit, key_words)
     if (not Sreddit.scraper(tocsv=True)):
         print("PLEASE fill in with your reddit username")
@@ -256,7 +269,18 @@ if __name__ == "__main__":
     print(mark)
 
     frequence = Sreddit.frequency(tocsv=True)
-    print(Sreddit.test)
+    #print(Sreddit.test)
+
+    test = Sreddit.specific_sentiment()
+
+    from time import gmtime, strftime
+    tempo = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+    test['time'] = tempo
+    print(test)
+    dati = pd.DataFrame([test])
+    dati.set_index('time', inplace=True)
+    dati.to_csv('results/RISULTATI.csv', mode = 'a')
+
 
 
     #Sreddit.naive_count(graph=True)
